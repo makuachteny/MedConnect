@@ -1,0 +1,74 @@
+body {
+    background-color: #aebccb;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    width: 40%;
+    border: 1px solid rgb(239, 232, 232);
+    border-radius: 25px;
+    gap: 20px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    /* text-align: center; */
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0px;
+    /* text-align: center; */
+}
+
+.email,
+.password {
+    margin-bottom: 20px;
+}
+.password p {
+    text-align: center;
+}
+.email h4,
+.password h4 {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 65%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#checkbox {
+    margin-top: 25px;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #4318FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
