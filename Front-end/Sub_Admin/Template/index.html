@@ -36,7 +36,7 @@
       <!-- sidebar -->
       <aside id="sidebar">
         <div class="sidebar-title">
-          <div class="sidebar-brand"><span class="material-icons-outlined">medication</span><strong>MEDCONNECT</strong></div>
+          <div class="sidebar-brand"><strong>MEDCONNECT</strong></div>
           <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
         </div>
         <ul class="sidebar-list">
@@ -55,41 +55,62 @@
       </aside>
 
 <!-- MAIN -->
+ <!-- Main -->
       <main class="main-container">
-  <div class="main-title">
-          <h4>Kigali branch</h4>
+        <div class="main-title">
+          <p class="branch">Kigali branch</p>
         </div>
 
         <div class="main-cards">
 
           <div class="card">
             <div class="card-inner">
-              <h3>user</h3>
-              <img src="../images/users-group.png" alt="user group"><h4>45</h4>
+              <p class="text-primary">Users</p>
+              <img src="../images/users-group.png" alt="An image icon of the users group">
             </div>
-            
+            <span class="number">249</span>
           </div>
 
           <div class="card">
             <div class="card-inner">
-              <h3>Total Payments</h3>
-              <img src="../images/dollar_sign.png" alt="Total payment">
-            <h4>200,000</h4>
+              <p class="text-primary">Total payment</p>
+              <img src="../images/dollar_sign.png" alt="">
+            </div>
+            <p class="text-primary font-weight-bold"> 20000</p>
           </div>
-            
-          </div>
+
           <div class="card">
             <div class="card-inner">
-              <h3>Active users</h3>
+              <p class="text-primary">Active Users</p>
               <img src="../images/active_user.png" alt="">
-            <h4>56</h4>
-          </div> 
+            </div>
+            <p class="text-primary font-weight-bold">22</p>
           </div>
+
         </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">Total patients from different hospitals</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Patient Analysis</p>
+            <div id="area-chart"></div>
+          </div>
+
         </div>
       </main>
-      <!-- End MAIN -->
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
   </body>
 </html>
