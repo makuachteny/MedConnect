@@ -46,6 +46,14 @@ body {
   background-color: #ffffff;
   border-radius: 25px;
 }
+.smaller-header{
+  display: flex;
+  align-items:center;
+  padding: 3px;
+  padding-left: 15px;
+  background-color: #ffffff;
+  border-radius: 25px; 
+}
 
 /* Styling for the search container */
 .search-container {
@@ -174,7 +182,7 @@ body {
   width: 1000px;
   margin: 10px; /* Center the login form horizontally */
   padding: 40px;
-  background-color: #f4f4f4;
+  background-color: FFFFFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -209,7 +217,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #7b32ff;
+  background-color: #4318FF;
   color: #fff;
   font-size: 18px;
   padding: 15px;
