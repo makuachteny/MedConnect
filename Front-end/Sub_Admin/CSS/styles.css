@@ -167,6 +167,7 @@ body {
   font-weight: bold;
 }
 .card {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -179,11 +180,12 @@ body {
   box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 
-/* 
-.card {
-  font-size: 20px;
-  font-weight: 600;
-} */
+
+.card-inner img{
+ height: 30px;
+ background-color:#F4F7FE;
+ border-radius: 50%;
+}
 
 .card-inner {
   display: flex;
