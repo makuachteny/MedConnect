@@ -161,7 +161,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 .font-weight {
   font-weight: bold;
@@ -170,7 +170,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 20px;
+  margin: 0 0 10px 0;
   padding: 10px;
   background-color: #ffffff;
   box-sizing: border-box;
