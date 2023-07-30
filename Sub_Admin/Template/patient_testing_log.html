@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Patient Testing Log</title>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../css/patient_testing_log.css">
+    <!-- Poppins fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+        <header class="header">
+          <div class="menu-icon" onclick="openSidebar()">
+            <span class="material-icons-outlined">menu</span>
+          </div>
+          <div class="header-left">
+            <h4>Patient Testing Log</h4>
+          </div>
+          <div class="header-right">
+            <div class="search-container">
+              <input type="search" name="search" id="search-input" placeholder="Search" />
+              <span class="material-icons-outlined search-icon">search</span>
+            </div>
+            <span class="material-icons-outlined">nightlight_round</span>
+            <span class="material-icons-outlined">account_circle</span>
+          </div>
+        </header>
+        <!-- sidebar -->
+        <!-- sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand"><span class="material-icons-outlined">medication</span><strong>MEDCONNECT</strong></div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard</li>
+          <li class="sidebar-list-item"><img src="../images/patient_management.png" alt="patient management image" />Patient Management</li>
+          <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" />Hospital Management</li>
+          <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" />Patient Testing</li>
+          <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" />Operation Theater</li>
+          <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" />Staff management</li>
+          <li class="sidebar-list-item"><img src="../images/user.png" alt="" />User Management</li>
+          <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" />Doctor Management</li>
+          <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff Attendance</li>
+          <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" />Patient Reports</li>
+          <li class="sidebar-list-item"><img src="../images/profile.png" alt="" />Profile</li>
+        </ul>
+        <div class="purple-logout-button">
+          <button type="button" class="btn btn-purple">Logout</button>
+      </div>           
+      </aside>
+      <!-- Main -->
+      <main class ="main-container">
+        <div class="container">
+            <div class="main-title">
+                <h4>Kigali branch</h4>
+              </div>
+              <div class="form-group">
+                <label for="PatientId"><h7>Patient ID:</h7></label>
+                <input type="text" id="patientId" name="patientId" placeholder="Enter patient ID">
+              </div>
+            
+              <div class="form-group">
+                <label for="testType"><h7>Test Type</h7></label>
+                <input type="text" id="testType" name="testType" placeholder="Enter test type">
+              </div>
+            
+              <div class="form-group">
+                <label for="testDate"><h7>Test Date:</h7></label>
+                <input type="date" id="testDate" name="testDate">
+              </div>
+            
+              <div class="form-group">
+                <label for="testResult"><h7>Test Result:</h7></label>
+                <input type="text" id="testResult" name="testResult" placeholder="Enter test result"> 
+              </div>
+              <div class="button">
+                <button type="button" class="btn">Add Patient</button>
+              </div>   
+        </main>
+        <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
