@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="../CSS/hospital_management.css" />
+        <!-- Poppins fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap"
+            rel="stylesheet" />
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <h4>Main Dashboard</h4>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="search" name="search" id="search-input" placeholder="Search" />
+                        <span class="material-icons-outlined search-icon">search</span>
+                    </div>
+                    <span class="material-icons-outlined">nightlight_round</span>
+                    <span class="material-icons-outlined">account_circle</span>
+                </div>
+            </header>
+
+            <!-- sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand"><strong>MEDCONNECT</strong></div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard
+                    </li>
+                    <li class="sidebar-list-item"><img src="../images/patient_management.png"
+                            alt="patient management image" />Patient Management</li>
+                    <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" />Hospital
+                        Management</li>
+                    <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" />Patient Testing</li>
+                    <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" />Operation Theater
+                    </li>
+                    <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" />Staff management</li>
+                    <li class="sidebar-list-item"><img src="../images/user.png" alt="" />User Management</li>
+                    <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" />Doctor Management</li>
+                    <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff
+                        Attendance</li>
+                    <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" />Patient Reports</li>
+                    <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" />Profile</li>
+                </ul>
+            </aside>
+
+            <!-- MAIN -->
+            <main class="main-container">
+                <div class="main-title">
+                    <p class="branch">Kigali branch</p>
+                </div>
+
+                <div class="main-cards">
+
+                    <div class="card"id="card-1">
+                        <div class="card-inner" >
+                        <img src="../images/patient_management2.png">
+                        </div>
+                         <span class="number">12,576</span>
+                         <p class="text-primary">Number of Patients</p>
+                       
+                    </div>
+
+                    <div class="card"id="card-2">
+                        <div class="card-inner" >
+                    
+                            <img src="../images/ph_money-thin.png">
+                        </div>
+                        <span class="number">RWF 2,000,000</span>
+                        <p class="text-primary">Revenue Generated</p>
+                        
+                    </div>
+                        <div class="stars-grid">
+                            
+                            <!-- 5 rows and 5 columns of stars -->
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                </div>
+                <div class="charts-card">
+                    <p class="chart-title">Bed Occupancy Rate: 67%</p>
+                    <div id="pie-chart"></div>
+                </div>
+
+        </div>
+        </main>
+        <!-- End Main -->
+
+        </div>
+
+        <!-- Scripts -->
+        <!-- ApexCharts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+        <!-- Custom JS -->
+        <script src="../js/script.js"></script>
+    </body>
+
+</html>

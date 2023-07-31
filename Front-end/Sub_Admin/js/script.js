@@ -121,3 +121,60 @@ var areaChartOptions = {
 
 var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
 areaChart.render();
+
+// PIE CHART
+// chart.js
+document.addEventListener("DOMContentLoaded", function () {
+  var options = {
+    chart: {
+      type: 'pie',
+      width: '600px', // Adjust the width to make the chart medium-sized (in pixels).
+    },
+    series: [67, 33], // Unoccupied: 67%, Occupied: 33% (100 - 67 = 33)
+    labels: ['Unoccupied', 'Occupied'],
+    dataLabels: {
+      enabled: true,
+      formatter: function (val, opts) {
+        return val.toFixed(0) + '%';
+      },
+      textAnchor: 'middle',
+      distributed: false,
+      offsetX: 0,
+      offsetY: 0,
+      style: {
+        fontSize: '14px',
+        fontFamily: 'Helvetica, Arial, sans-serif',
+        fontWeight: 'bold',
+        colors: ['green', 'red'], // Set the colors for unoccupied and occupied.
+      },
+      background: {
+        enabled: true,
+        foreColor: '#fff',
+        padding: 4,
+        borderRadius: 2,
+        borderWidth: 1,
+        borderColor: '#fff',
+        opacity: 0.9,
+        dropShadow: {
+          enabled: false,
+          top: 1,
+          left: 1,
+          blur: 1,
+          color: '#000',
+          opacity: 0.45,
+        },
+      },
+      dropShadow: {
+        enabled: false,
+        top: 1,
+        left: 1,
+        blur: 1,
+        color: '#000',
+        opacity: 0.45,
+      },
+    },
+  };
+
+  var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
+  chart.render();
+});
