@@ -48,11 +48,9 @@ body {
 }
 .smaller-header{
   display: flex;
-  align-items:center;
+  align-items:self-start;
   padding: 3px;
-  padding-left: 15px;
-  background-color: #ffffff;
-  border-radius: 25px; 
+  padding-left: 3px; 
 }
 
 /* Styling for the search container */
@@ -182,7 +180,7 @@ body {
   width: 1000px;
   margin: 10px; /* Center the login form horizontally */
   padding: 40px;
-  background-color: FFFFFF;
+  background-color:#FFFFFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
