@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #e7e7e7;
+  background-color: #aebccb;
   color: #2b3674;
   font-family: "DM Sans", sans-serif;
 }
@@ -147,8 +147,8 @@ body {
 .purple-logout-button {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
-  margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
+  margin-top: 150px;
+  margin-bottom: 0px; /* Add margin at the bottom to create distance from other elements */
 }
 
 .purple-logout-button .btn {
@@ -187,8 +187,9 @@ body {
 }
 /* Form Styling */
 .login-form {
-  max-width: 10000px;
+  max-width: 1000px;
   width: 1000px;
+  height: 490px;
   margin: 10px; /* Center the login form horizontally */
   padding: 40px;
   background-color:#FFFFFF;
@@ -197,12 +198,13 @@ body {
 }
 
 .login-form h2 {
+  margin-top: 0px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align:left;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .form-group label {
@@ -213,9 +215,9 @@ body {
 }
 
 .form-group input {
-  width: 100%;
+  width: 90%;
   padding: 15px;
-  font-size: 16px;
+  font-size: 6px;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -228,16 +230,19 @@ body {
 .btn-primary {
   background-color: #4318FF;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   padding: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  position:static; /* Add absolute positioning for the button */
+  bottom: 20px; /* Position the button at the bottom with some spacing */
+  right: 100px; /* Position the button at the right with some spacing */
+  left: 60px;
+  width: 80px;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: #9d4aff;
 }
-
