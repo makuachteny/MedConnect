@@ -1,6 +1,5 @@
 ---
 title: "MedConnect Medical Record System"
-output: html_document
 ---
 
 # MedConnect Medical Record System
