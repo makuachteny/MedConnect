@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patient Management</title>
+    <title>Generate Bill</title>
     <!-- Custom Css -->
-    <link rel="stylesheet" href="../CSS/patient_management.css">
+    <link rel="stylesheet" href="../CSS/generate_bill.css">
     <!-- Poppins fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
       <!-- Header -->
       <header class="header">
         <div class="header-left">
-          <h3>Patient Management</h3>
+          <h3>Generate Bill</h3>
           <div> 
             <h4 class="smaller-header">Kigali Branch</h4>
           </div>
@@ -40,15 +40,9 @@
         </div>
         <ul class="sidebar-list">
           <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard</li>
-          <li class="sidebar-list-item"><img src="../images/patient_management.png" alt="patient management image" />Patient Management</li>
-          <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" />Hospital Management</li>
-          <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" />Patient Testing</li>
-          <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" />Operation Theater</li>
-          <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" />Staff management</li>
-          <li class="sidebar-list-item"><img src="../images/user.png" alt="" />User Management</li>
-          <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" />Doctor Management</li>
-          <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff Attendance</li>
-          <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" />Patient Reports</li>
+          <li class="sidebar-list-item"><img src="../images/Reports.png" alt="reports img" />Reports</li>
+          <li class="sidebar-list-item"><img src="../images/user.png" alt="" />Manage User</li>
+          <li class="sidebar-list-item"><img src="../images/bill 2.png" alt="" />Generate Bill</li>
           <li class="sidebar-list-item"><img src="../images/profile.png" alt="" />Profile</li>
         </ul>
          <!-- Purple Logout Button -->
@@ -62,33 +56,29 @@
      <div class="main-title">
        <!-- Login Form -->
        <div class="login-form">
-          <h2>Add User</h2>
+          <h2>Calculate Bill</h2>
           <form>
             <div class="form-group">
-              <label for="scno">SCNO.</label>
-              <input type="text" id="scno" name="scno" required="">
+              <label for="uid">UID.</label>
+              <input type="text" id="uid" name="uid" required="">
             </div>
             <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" id="fullname" name="fullname" required="">
+              <label for="Date">Date</label>
+              <input type="date" id="Date" name="Date" required="">
             </div>
             <div class="form-group">
-              <label for="address">Address</label>
-              <input type="text" id="address" name="address" required="">
+              <label for="Due Date">Due Date</label>
+              <input type="date" id="Due Date" name="Due Date" required="">
             </div>
             <div class="form-group">
-              <label for="number">Number</label>
-              <input type="text" id="number" name="number" required="">
+              <label for="units">Units</label>
+              <input type="text" id="units" name="units" required="">
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required="">
+              <label for="Bill Due">Bill Due</label>
+              <input type="Bill Due" id="Bill Due" name="Bill Due" required="">
             </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required="">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="Calculate" class="btn btn-primary">Calculate</button>
           </form>
          </div>
         </div>
