@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="../CSS/profile.css" />
+        <!-- Poppins fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap"
+            rel="stylesheet" />
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <h4>Main Dashboard</h4>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="search" name="search" id="search-input" placeholder="Search" />
+                        <span class="material-icons-outlined search-icon">search</span>
+                    </div>
+                    <span class="material-icons-outlined">nightlight_round</span>
+                    <span class="material-icons-outlined">account_circle</span>
+                </div>
+            </header>
+
+            <!-- sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand"><strong>MEDCONNECT</strong></div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard
+                    </li>
+                    <li class="sidebar-list-item"><img src="../images/patient_management.png"
+                            alt="patient management image" />Patient Management</li>
+                    <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" />Hospital
+                        Management</li>
+                    <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" />Patient Testing</li>
+                    <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" />Operation Theater
+                    </li>
+                    <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" />Staff management</li>
+                    <li class="sidebar-list-item"><img src="../images/user.png" alt="" />User Management</li>
+                    <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" />Doctor Management</li>
+                    <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff
+                        Attendance</li>
+                    <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" />Patient Reports</li>
+                    <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" />Profile</li>
+                </ul>
+            </aside>
+
+            <!-- MAIN -->
+            <main class="main-container">
+                <div class="your-profile">
+                    <h2>Your Profile</h2>
+                    <div class="your-profile-img">
+                        <img src="../images/profile_avatar.png" alt="Profile Avatar">
+                        <button class="edit-button">Edit</button>
+                    </div>
+                    <div class="profile-details">
+                        <p><strong>Admin ID:</strong> 12345</p>
+                        <p><strong>Name:</strong> Teny Makuach</p>
+                        <p><strong>Address:</strong> 123 Main Street, City</p>
+                        <p><strong>Contact No:</strong> +254 7123-45678</p>
+                        <p><strong>Email: </strong> tenymakuach@gmail.com</p>
+                        <p><strong>Password:</strong> ********</p>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main -->
+        </div>
+
+        <!-- Scripts -->
+        <!-- ApexCharts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+        <!-- Custom JS -->
+        <script src="../js/script.js"></script>
+    </body>
+
+</html>
