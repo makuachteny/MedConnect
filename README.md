@@ -21,7 +21,7 @@ MedConnect is a Python-based medical record system designed to streamline and ma
 - **Patient Reports**: Generate and access patient medical reports securely.
 - **Profile**: Users can view and update their personal profiles.
 
-# Development Process for MEDCONNECT Medical Record System Web Application
+# Development Process
 
 ## 1. Project Planning and Requirements Gathering
 
