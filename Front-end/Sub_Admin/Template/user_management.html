@@ -34,23 +34,29 @@
         </div>
       </header>
 
-      <!-- sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand"><span class="material-icons-outlined">medication</span><strong>MEDCONNECT</strong></div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
-        </div>
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard</li>
-          <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Reports</li>
-          <li class="sidebar-list-item"><img src="../images/user_1.png" alt="" />Manage User</li>
-          <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" />General Bills</li>
-          <li class="sidebar-list-item"><img src="../images/profile.png" alt="" />Profile</li>
-        </ul>
-        <div class="purple-logout-button">
-          <button type="button" class="btn btn-purple">Logout</button>
-      </div>  
-      </aside>  
+            <!-- Sidebar -->
+            <aside id="sidebar">
+              <div class="sidebar-title">
+                <div class="sidebar-brand"><span class="material-icons-outlined">medication</span><strong><a
+                      href="dashboard.html">MEDCONNECT</a></strong></div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
+              </div>
+              <ul class="sidebar-list">
+                <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> <a
+                    href="index.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" /><a
+                    href="reports.html">Reports</a></li>
+                <li class="sidebar-list-item"><img src="../images/user_1.png" alt="" /><a href="doctor_management.html">Manage
+                    Doctor</a></li>
+                <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="generate_bill.html">General
+                    Bills</a></li>
+                <li class="sidebar-list-item"><img src="../images/profile.png" alt="" /><a href="profile.html">Profile</a></li>
+              </ul>
+              <div class="logout-button">
+                <button type="button" Id="btn-purple">Logout</button>
+              </div>
+            </aside>
 
 <!-- MAIN -->
    <main class="main-container">

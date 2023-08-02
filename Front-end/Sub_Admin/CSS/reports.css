@@ -59,7 +59,8 @@ body {
 /* Styling for the search input */
 #search-input {
   margin-left: -18px;
-  padding-left: 30px; /* Space for the search icon */
+  padding-left: 30px;
+  /* Space for the search icon */
   padding-right: 30px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -103,13 +104,85 @@ body {
   color: #040404;
   border-radius: 20px;
 }
-.sidebar-list-item #profile {
+
+/* Add this CSS to your existing styles */
+.sidebar-list-item a {
+  text-decoration: none;
+}
+
+/* .sidebar-list-item #profile {
   cursor: pointer;
   margin-top: 180px;
-}
+} */
 .sidebar-list-item:hover {
   background-color: #bdc3dc;
   cursor: pointer;
+}
+
+.sidebar-list-item img {
+  height: 15px;
+  padding-top: 1px;
+  padding-right: 10px;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+#btn {
+  background-color: #868CFF;
+  padding: 5px 35px;
+  margin: 50px 0px 20px 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+/* Buttons styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#btn-purple {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #9b59b6;
+  margin: 250px 0px 0px 30px;
+}
+
+.btn-purple {
+  background-color: #9b59b6;
+}
+.sidebar-brand {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-brand > span {
+  margin-right: 10px;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
+/* Add this CSS to your existing styles */
+.sidebar-list-item a {
+  text-decoration: none;
 }
 
 .sidebar-list-item img {
@@ -131,14 +204,17 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-.sidebar-brand >span {
+
+.sidebar-brand > span {
   margin-right: 10px;
 }
+
 .sidebar-responsive {
   display: inline !important;
   position: absolute;
   z-index: 12 !important;
 }
+
 /* ---------- MAIN ---------- */
 
 .main-container {
@@ -155,8 +231,9 @@ body {
 .main-title > p {
   font-size: 20px;
 }
+
 .container {
-  background-color: aliceblue ;
+  background-color: aliceblue;
   margin-top: 5px;
   padding: 10px;
   border-radius: 15px;
@@ -167,9 +244,12 @@ body {
 table {
   border-collapse: collapse;
   width: 100%;
+  margin: 20px;
 }
 
-th, td {
+th,
+td {
+  margin: 20px;
   border: 0px solid #ccc;
   padding: 8px;
   text-align: left;
@@ -177,6 +257,8 @@ th, td {
 
 th {
   background-color: #f2f2f2;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 

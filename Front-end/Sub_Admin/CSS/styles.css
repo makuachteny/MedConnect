@@ -103,6 +103,10 @@ body {
   color: #040404;
   border-radius: 20px;
 }
+/* Add this CSS to your existing styles */
+.sidebar-list-item a {
+  text-decoration: none;
+}
 /* .sidebar-list-item #profile {
   cursor: pointer;
   margin-top: 180px;

@@ -1,13 +1,19 @@
-/* Custom CSS for the Admin Dashboard */
-
-/* General Styles */
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    padding: 0;
-    margin: 0;
+    font-family: "Poppins", sans-serif;
     background-color: #aebccb;
     color: #2b3674;
-    font-family: "DM Sans", sans-serif;
 }
 
 /* Styling for icons */
@@ -20,7 +26,7 @@ body {
 /* Grid layout for the page */
 .grid-container {
     display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-columns: 260px 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
         "sidebar header header header"
@@ -28,8 +34,7 @@ body {
     height: 100vh;
 }
 
-/* HEADER */
-/* Styling for the header section */
+/* Header */
 .header {
     grid-area: header;
     height: 70px;
@@ -41,14 +46,21 @@ body {
     cursor: pointer;
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h4 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 /* Styling for the right side of the header */
 .header-right {
     display: flex;
     align-items: center;
-    padding: 6px;
-    padding-left: 25px;
-    background-color: #ffffff;
-    border-radius: 25px;
+    gap: 20px;
 }
 
 /* Styling for the search container */
@@ -58,23 +70,19 @@ body {
 
 /* Styling for the search input */
 #search-input {
-    margin-left: -18px;
-    padding-left: 30px;
-    /* Space for the search icon */
-    padding-right: 30px;
+    padding: 10px 30px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    height: 30px;
     outline: none;
     font-size: 16px;
     background-color: #f4f7fe;
-    cursor: pointer;
+    width: 200px;
 }
 
 /* Styling for the search icon */
 .search-icon {
     position: absolute;
-    left: -12px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -216,57 +224,96 @@ body {
     position: absolute;
     z-index: 12 !important;
 }
-
-/* Main section */
+/* Main */
 .main-container {
     grid-area: main;
+    overflow-y: auto;
+    padding: 20px;
 }
 
-/* Profile section */
-.your-profile {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
+.main-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-form {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.your-profile h2 {
-    margin: 10px 10px 0 10px;
-    padding: 30px;
-    background-color: #868CFF;
-    border-radius: 10px;
-    color: #fff;
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-/* Profile image */
-.your-profile-img {
-    text-align: right;
+.form-group {
     margin-bottom: 20px;
 }
 
-.your-profile-img img {
-    /* display: block; */
-    margin-top: -50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.profile-details {
-    margin: 0 0 10px 10px;
-    padding: 0;
-    display: block;
-}
-.edit-button {
-    padding: 8px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.edit-button:hover {
-    background-color: #0056b3;
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #4318FF;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #9d4aff;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a5aaad;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4f35a1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a5aaad;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas:
+            "header"
+            "main";
+    }
+
+    #sidebar {
+        display: none;
+    }
 }

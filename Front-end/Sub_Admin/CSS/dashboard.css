@@ -1,7 +1,6 @@
 /* Custom CSS for the Admin Dashboard */
 
 /* General Styles */
-
 body {
     padding: 0;
     margin: 0;
@@ -50,7 +49,9 @@ body {
     background-color: #ffffff;
     border-radius: 25px;
 }
-
+.header-left {
+    text-align: center;
+}
 /* Styling for the search container */
 .search-container {
     position: relative;
@@ -78,6 +79,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+.sidebar-list-item a{
+    text-decoration: none;
+}
 
 /* SIDEBAR */
 /* Styling for the sidebar section */
@@ -100,29 +104,21 @@ body {
 }
 
 .sidebar-list-item {
-    padding: 10px 10px;
+    padding: 10px;
     color: #040404;
     border-radius: 20px;
-}
-
-/* Add this CSS to your existing styles */
-.sidebar-list-item a {
-    text-decoration: none;
-}
-
-/* .sidebar-list-item #profile {
-  cursor: pointer;
-  margin-top: 180px;
-} */
-.sidebar-list-item:hover {
-    background-color: #bdc3dc;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-list-item img {
     height: 15px;
-    padding-top: 1px;
     padding-right: 10px;
+}
+
+.sidebar-list-item:hover {
+    background-color: #bdc3dc;
 }
 
 .sidebar-title {
@@ -133,21 +129,22 @@ body {
     cursor: pointer;
 }
 
-#btn {
-    background-color: #868CFF;
-    padding: 5px 35px;
-    margin: 50px 0px 20px 30px;
-    border: 1px solid;
-    border-radius: 10px;
+.sidebar-brand {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-/* Buttons styles */
+.sidebar-brand > span {
+    margin-right: 10px;
+}
+
 .btn {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 500;
 }
 
@@ -162,111 +159,17 @@ body {
     margin: 250px 0px 0px 30px;
 }
 
-.btn-purple {
+/* .btn-purple {
     background-color: #9b59b6;
-}
+} */
 
-.sidebar-brand {
-    margin: 15px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.sidebar-brand > span {
-    margin-right: 10px;
-}
-
-.sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-    z-index: 12 !important;
-}
-
-/* Add this CSS to your existing styles */
-.sidebar-list-item a {
-    text-decoration: none;
-}
-
-.sidebar-list-item img {
-    height: 15px;
-    padding-top: 1px;
-    padding-right: 10px;
-}
-
-.sidebar-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    cursor: pointer;
-}
-
-.sidebar-brand {
-    margin: 15px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.sidebar-brand > span {
-    margin-right: 10px;
-}
-
-.sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-    z-index: 12 !important;
-}
-
-/* Main section */
+/* MAIN */
+/* Main section styles */
 .main-container {
     grid-area: main;
+    overflow-y: auto;
 }
-
-/* Profile section */
-.your-profile {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.your-profile h2 {
-    margin: 10px 10px 0 10px;
-    padding: 30px;
-    background-color: #868CFF;
-    border-radius: 10px;
-    color: #fff;
-}
-
-/* Profile image */
-.your-profile-img {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.your-profile-img img {
-    /* display: block; */
-    margin-top: -50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.profile-details {
-    margin: 0 0 10px 10px;
-    padding: 0;
-    display: block;
-}
-.edit-button {
-    padding: 8px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.edit-button:hover {
-    background-color: #0056b3;
+.main-section {
+margin: 20px;
+padding: 10px;
 }

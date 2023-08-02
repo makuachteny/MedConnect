@@ -1,12 +1,13 @@
-body{
-    width: 30%;
-    height: 100vh;
-    background-color: #aebccb;
+body {
+  width: 30%;
+  height: 100vh;
+  background-color: #aebccb;
 }
+
 /* SIDEBAR */
 /* Styling for the sidebar section */
 #sidebar {
- /* margin-top: 0; */
+  /* margin-top: 0; */
   /* grid-area: sidebar; */
   height: 100vh;
   background-color: #ffffff;
@@ -29,11 +30,18 @@ body{
   color: #040404;
   border-radius: 20px;
 }
-.sidebar-list-item:hover{
+
+/* Add this CSS to your existing styles */
+.sidebar-list-item a {
+  text-decoration: none;
+}
+
+.sidebar-list-item:hover {
   background-color: #bdc3dc;
   cursor: pointer;
 }
-.btn{
+
+.btn {
   background-color: #4318FF;
   margin: 300px 30px 0;
   padding: 5px 40px;
@@ -41,6 +49,7 @@ body{
   border: 1px;
   cursor: pointer;
 }
+
 .sidebar-list-item img {
   height: 15px;
   padding-top: 1px;
@@ -60,9 +69,11 @@ body{
   font-size: 20px;
   font-weight: 700;
 }
-.sidebar-brand >span {
+
+.sidebar-brand > span {
   margin-right: 10px;
 }
+
 .sidebar-responsive {
   display: inline !important;
   position: absolute;
