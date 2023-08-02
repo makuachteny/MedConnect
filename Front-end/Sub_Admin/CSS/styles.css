@@ -103,10 +103,10 @@ body {
   color: #040404;
   border-radius: 20px;
 }
-.sidebar-list-item #profile {
+/* .sidebar-list-item #profile {
   cursor: pointer;
   margin-top: 180px;
-}
+} */
 .sidebar-list-item:hover {
   background-color: #bdc3dc;
   cursor: pointer;
@@ -125,7 +125,13 @@ body {
   padding: 0;
   cursor: pointer;
 }
-
+#btn {
+  background-color: #868CFF;
+  padding: 5px 35px;
+  margin: 50px 0px 20px 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
 .sidebar-brand {
   margin: 15px;
   font-size: 20px;

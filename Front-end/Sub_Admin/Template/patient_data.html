@@ -17,12 +17,12 @@
   <body>
     <div class="grid-container">
       <!-- Header -->
-      <header class="header">
+       <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
         <div class="header-left">
-          <h3>Patient Data and Reports</h3>
-          <div> 
-            <h4 class="smaller-header">Kigali Branch</h4>
-          </div>
+          <h4>Patient Data</h4>
         </div>
         <div class="header-right">
           <div class="search-container">
@@ -32,7 +32,8 @@
           <span class="material-icons-outlined">nightlight_round</span>
           <span class="material-icons-outlined">account_circle</span>
         </div>
-      </header>
+       </header>
+ 
 
       <!-- sidebar -->
       <aside id="sidebar">
@@ -42,7 +43,7 @@
         </div>
         <ul class="sidebar-list">
           <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard</li>
-          <li class="sidebar-list-item"><img src="../images/patient_management.png" alt="" />Patient Management</li>
+          <li class="sidebar-list-item"><img src="../images/patient_management.png" alt="" />Patient Administration</li>
           <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" />Hospital Management</li>
           <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" />Patient Testing </li>
           <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" />Operation Theater </li>
@@ -61,7 +62,7 @@
 <!-- MAIN -->
    <main class="main-container">
     <div class="main-title">
-     <h3>Data</h3>
+      <p class="branch">Kigali branch</p>
     </div>
     <div class="purple-adduser-button">
       <button type="button" class="btn btn-purple">Download</button> 
