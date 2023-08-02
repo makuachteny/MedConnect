@@ -108,6 +108,10 @@ body {
     cursor: pointer;
     border-radius: 15px;
   }
+    /* Add this CSS to your existing styles */
+    .sidebar-list-item a {
+      text-decoration: none;
+    }
   .sidebar-list-item img {
     height: 15px;
     padding-top: 1px;
