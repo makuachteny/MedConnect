@@ -16,7 +16,7 @@ body {
 /* Grid layout for the page */
 .grid-container {
   display: grid;
-  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-columns: 260px 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
     "sidebar header header header"
@@ -172,8 +172,10 @@ body {
 }
 
 .main-title {
+  margin-top: 50px; 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-title > p {
   font-size: 20px;
@@ -182,15 +184,12 @@ body {
 }
 /* Form Styling */
 .login-form {
-  max-width: 1000px;;
-  position: absolute;
-  top: 120px;
-  left: 280px;
-  width: 800px;
+  max-width: 1000px;
+  width: 100%;
   height: 480px;
-  margin: 10px; /* Center the login form horizontally */
+  margin: 50px auto; /* Center the login form horizontally and provide top margin */
   padding: 40px;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -235,8 +234,8 @@ body {
   border-radius: 20px;
   cursor: pointer;
   position:absolute; /* Add absolute positioning for the button */
-  bottom: 30px; /* Position the button at the bottom with some spacing */
-  right: 200px; /* Position the button at the right with some spacing */
+  bottom: 10px; /* Position the button at the bottom with some spacing */
+  right: 270px; /* Position the button at the right with some spacing */
   width: 120px;
   transition: background-color 0.3s ease;
 }
@@ -291,16 +290,12 @@ body {
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
-  .main-cards {
+  .login-form{
     grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 0;
   }
 
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
 }
 
 /* Extra Small <= 576px */
