@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
         <!-- Custom Css -->
-        <link rel="stylesheet" href="../CSS/styles.css" />
+        <link rel="stylesheet" href="../CSS/dashboard.css" />
         <!-- Poppins fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,29 +39,30 @@
             <!-- Sidebar -->
             <aside id="sidebar">
                 <div class="sidebar-title">
-                    <div class="sidebar-brand"><span class="material-icons-outlined">medication</span><strong>MEDCONNECT</strong>
+                    <div class="sidebar-brand"><span
+                            class="material-icons-outlined">medication</span><strong> <a href="dashboard.html">MEDCONNECT</a></strong>
                     </div>
                     <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
                 </div>
                 <ul class="sidebar-list">
-                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> Dashboard
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /> <a href="index.html">Dashboard</a>
                     </li>
-                    <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Reports</li>
-                    <li class="sidebar-list-item"><img src="../images/user_1.png" alt="" />Manage Doctor</li>
-                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" />General Bills</li>
-                    <li class="sidebar-list-item"><img src="../images/profile.png" alt="" />Profile</li>
+                    <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" /><a href="reports.html">Reports</a></li>
+                    <li class="sidebar-list-item"><img src="../images/user_1.png" alt="" /><a href="doctor_management.html">Manage Doctor</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="generate_bill.html">General Bills</a></li>
+                    <li class="sidebar-list-item"><img src="../images/profile.png" alt="" /><a href="profile.html">Profile</a></li>
                 </ul>
                 <div class="logout-button">
-                    <button type="button" Id="btn-purple">Logout</button>
+                    <button type="button" id="btn-purple">Logout</button>
                 </div>
             </aside>
 
-
             <!-- MAIN -->
             <main class="main-container">
-            <div class="header-left">
-                <h1>Welcome to MedConnect</h1>
-                <p>Revolutionizing Healthcare with Digital Medical Records</p>
+                <div class="header-left">
+                    <h1>Welcome to MedConnect</h1>
+                    <p>Revolutionizing Healthcare with Digital Medical Records</p>
+                </div>
                 <section class="main-section">
                     <h2>About MedConnect</h2>
                     <p>At MedConnect, we are dedicated to transforming the healthcare industry by eliminating the
@@ -74,10 +75,26 @@
                         healthcare processes, and enhance medical decision-making.</p>
                     <a href="#features" class="btn btn-purple">Learn More</a>
                 </section>
-                <section id="features" class="main-section">
-                    <h2>Key Features</h2>
-                    <!-- Add feature descriptions and highlights here -->
-                </section>
+            </section>
+            <section id="features" class="main-section">
+                <h2>Key Features</h2>
+                <ul class="key-features-list">
+                    <li>
+                        <h3>Electronic Health Records (EHR)</h3>
+                        <p>Effortlessly manage and access patient health records in a secure digital format.</p>
+                    </li>
+                    <li>
+                        <h3>Streamlined Appointment Scheduling</h3>
+                        <p>Schedule appointments with ease and send automated reminders to patients.</p>
+                    </li>
+                    <li>
+                        <h3>Integrated Prescription Management</h3>
+                        <p>Prescribe medications digitally and monitor patient medication history.</p>
+                    </li>
+                    <!-- Add more key features as needed -->
+                </ul>
+            </section>
+            </section>
                 <section class="main-section">
                     <h2>Join Us Today</h2>
                     <p>Experience the benefits of a paperless medical record system. Sign up for MedConnect now and be
@@ -87,7 +104,6 @@
                 </section>
             </main>
             <!-- End Main -->
-
         </div>
 
         <!-- Scripts -->

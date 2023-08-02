@@ -140,7 +140,30 @@ body {
     border: 1px solid;
     border-radius: 10px;
 }
+/* Buttons styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+}
 
+#btn-purple {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #9b59b6;
+    margin: 250px 0px 0px 30px;
+}
+
+.btn-purple {
+    background-color: #9b59b6;
+}
 .sidebar-brand {
     margin: 15px;
     font-size: 20px;
@@ -170,30 +193,7 @@ body {
     justify-content: space-between;
 }
 
-/* Buttons styles */
-.btn {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500;
-}
 
-#btn-purple {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500;
-    background-color: #9b59b6;
-    margin: 250px 0px 0px 30px;
-}
-
-.btn-purple {
-    background-color: #9b59b6;
-}
 
 /* Table styles */
 table {

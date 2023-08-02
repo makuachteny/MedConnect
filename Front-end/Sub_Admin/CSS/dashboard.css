@@ -1,7 +1,6 @@
 /* Custom CSS for the Admin Dashboard */
 
 /* General Styles */
-
 body {
     padding: 0;
     margin: 0;
@@ -50,7 +49,9 @@ body {
     background-color: #ffffff;
     border-radius: 25px;
 }
-
+.header-left {
+    text-align: center;
+}
 /* Styling for the search container */
 .search-container {
     position: relative;
@@ -78,6 +79,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+.sidebar-list-item a{
+    text-decoration: none;
+}
 
 /* SIDEBAR */
 /* Styling for the sidebar section */
@@ -100,29 +104,21 @@ body {
 }
 
 .sidebar-list-item {
-    padding: 10px 10px;
+    padding: 10px;
     color: #040404;
     border-radius: 20px;
-}
-
-/* Add this CSS to your existing styles */
-.sidebar-list-item a {
-    text-decoration: none;
-}
-
-/* .sidebar-list-item #profile {
-  cursor: pointer;
-  margin-top: 180px;
-} */
-.sidebar-list-item:hover {
-    background-color: #bdc3dc;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-list-item img {
     height: 15px;
-    padding-top: 1px;
     padding-right: 10px;
+}
+
+.sidebar-list-item:hover {
+    background-color: #bdc3dc;
 }
 
 .sidebar-title {
@@ -131,14 +127,6 @@ body {
     align-items: center;
     padding: 0;
     cursor: pointer;
-}
-
-#btn {
-    background-color: #868CFF;
-    padding: 5px 35px;
-    margin: 50px 0px 20px 30px;
-    border: 1px solid;
-    border-radius: 10px;
 }
 
 .sidebar-brand {
@@ -151,18 +139,12 @@ body {
     margin-right: 10px;
 }
 
-.sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-    z-index: 12 !important;
-}
-/* Buttons styles */
 .btn {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 500;
 }
 
@@ -177,85 +159,17 @@ body {
     margin: 250px 0px 0px 30px;
 }
 
-.btn-purple {
+/* .btn-purple {
     background-color: #9b59b6;
-}
+} */
 
-/* ---------- MAIN ---------- */
+/* MAIN */
 /* Main section styles */
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+}
 .main-section {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #E7E7E7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-.main-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.main-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Button styles */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-purple {
-    background-color: #9b59b6;
-}
-
-.btn-purple:hover {
-    background-color: #8248a6;
-}
-
-/* Buttons styles */
-.btn {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500;
-}
-
-#btn-purple {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500;
-    background-color: #9b59b6;
-    margin: 250px 0px 0px 30px;
-}
-
-.btn-purple {
-    background-color: #9b59b6;
-}
-
-/* Other specific styles for the doctor management page can be added here */
-
-/* Media queries */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Add more responsive styles as needed */
+margin: 20px;
+padding: 10px;
 }
