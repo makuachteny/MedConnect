@@ -19,6 +19,7 @@ def get_patient_by_id(patient_id):
 
 @app.route('/api/doctors', methods=['GET'])
 def get_all_doctors():
+
     return jsonify(Doctors_DataBase)
 
 @app.route('/api/doctors/<int:doctor_id>', methods=['GET'])
