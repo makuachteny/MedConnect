@@ -17,12 +17,12 @@
   <body>
     <div class="grid-container">
       <!-- Header -->
-      <header class="header">
+       <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
         <div class="header-left">
-          <h3>Patient Data and Reports</h3>
-          <div> 
-            <h4 class="smaller-header">Kigali Branch</h4>
-          </div>
+          <h4>Patient Data</h4>
         </div>
         <div class="header-right">
           <div class="search-container">
@@ -32,7 +32,8 @@
           <span class="material-icons-outlined">nightlight_round</span>
           <span class="material-icons-outlined">account_circle</span>
         </div>
-      </header>
+       </header>
+ 
 
       <!-- sidebar -->
       <aside id="sidebar">
@@ -61,7 +62,7 @@
 <!-- MAIN -->
    <main class="main-container">
     <div class="main-title">
-     <h3>Data</h3>
+      <p class="branch">Kigali branch</p>
     </div>
     <div class="purple-adduser-button">
       <button type="button" class="btn btn-purple">Download</button> 
