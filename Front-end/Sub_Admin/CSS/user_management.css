@@ -271,7 +271,10 @@ body {
   .purple-adduser-button .btn:hover {
     background-color: #9d4aff;
   }
-  
+  .purple-adduser-button a{
+    text-decoration: none;
+    color: white;
+  }
   /* ---------- MAIN ---------- */
   
   .main-container {
