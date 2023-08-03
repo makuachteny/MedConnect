@@ -144,7 +144,7 @@ body {
   color: #ffffff;
   font-size: 16px;
   padding: 10px 20px;
-  width: 200px;
+  width: 100px;
   height: 40px;
   cursor: pointer;
   transition: background-color 0.1s ease;
@@ -154,6 +154,10 @@ body {
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
+.purple-logout-button a {
+  text-decoration: none;
+}
+
 
 .sidebar-brand {
   margin: 15px;
