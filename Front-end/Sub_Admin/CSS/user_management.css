@@ -233,6 +233,9 @@ body {
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
+    .purple-logout-button a {
+      text-decoration: none;
+    }
     
     /* Hover Effect for the Purple Login Button */
     .purple-logout-button .btn:hover {
