@@ -1,3 +1,6 @@
+/* Custom CSS for the Admin Dashboard */
+
+/* General Styles */
 body {
   padding: 0;
   margin: 0;
@@ -23,55 +26,54 @@ body {
     "sidebar main main main";
   height: 100vh;
 }
+
 /* HEADER */
 /* Styling for the header section */
 .header {
-    grid-area: header;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
-    cursor: pointer;
+  grid-area: header;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 /* Styling for the right side of the header */
 .header-right {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    padding-left: 25px;
-    background-color: #ffffff;
-    border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  padding-left: 25px;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 
 /* Styling for the search container */
 .search-container {
-    position: relative;
+  position: relative;
 }
 
 /* Styling for the search input */
 #search-input {
-    margin-left: -18px;
-    padding-left: 30px;
-    /* Space for the search icon */
-    padding-right: 30px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    height: 30px;
-    outline: none;
-    font-size: 16px;
-    background-color: #f4f7fe;
-    cursor: pointer;
+  margin-left: -18px;
+  padding: 0 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 30px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f4f7fe;
+  cursor: pointer;
 }
 
 /* Styling for the search icon */
 .search-icon {
-    position: absolute;
-    left: -12px;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* SIDEBAR */
@@ -88,39 +90,42 @@ body {
 
 /* Styling for the list items in the sidebar */
 .sidebar-list {
-  margin: 0 50px 0 15px;
+  margin: 0 15px 0 50px;
   font-size: 15px;
   padding: 0;
   list-style-type: none;
 }
 
 .sidebar-list-item {
-  padding: 10px 10px;
+  padding: 10px;
   color: #040404;
   border-radius: 20px;
+  cursor: pointer;
 }
+
 .sidebar-list-item #profile {
   cursor: pointer;
   margin-top: 180px;
 }
+
 .sidebar-list-item:hover {
   background-color: #bdc3dc;
-  cursor: pointer;
 }
-/* Add this CSS to your existing styles */
+
 .sidebar-list-item a {
   text-decoration: none;
 }
+
 .sidebar-list-item img {
   height: 15px;
-  padding-top: 1px;
-  padding-right: 10px;
+  padding: 1px 10px 1px 0;
 }
 
 .sidebar-title {
   display: flex;
   justify-content: space-between;
   align-items: right;
+  /* Change 'right' to 'center' */
   padding: 0;
   cursor: pointer;
 }
@@ -130,9 +135,11 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-.sidebar-brand >span {
+
+.sidebar-brand > span {
   margin-right: 10px;
 }
+
 .sidebar-responsive {
   display: inline !important;
   position: absolute;
@@ -157,22 +164,26 @@ body {
   border-radius: 4px;
   color: #fff;
   font-weight: 500;
-  background-color: #9b59b6;
+  background-color: #4318FF;
   margin: 250px 0px 0px 30px;
 }
 
 .btn-purple {
-  background-color: #9b59b6;
+  background-color: #4318FF;
 }
+
 .purple-logout-button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* Center vertically */
   margin-top: 150px;
-  margin-bottom: 0px; /* Add margin at the bottom to create distance from other elements */
+  margin-bottom: 0px;
+  /* Add margin at the bottom to create distance from other elements */
 }
 
 .purple-logout-button .btn {
-  background-color: #7b32ff;
+  background-color: #4318FF;
   border-radius: 20px;
   color: #ffffff;
   font-size: 16px;
@@ -190,8 +201,6 @@ body {
 
 /* MAIN */
 /* Styling for the main content section */
-* ---------- MAIN ---------- */
-
 .main-container {
   grid-area: main;
   overflow-y: auto;
@@ -199,58 +208,52 @@ body {
 }
 
 .main-title {
-  margin-top: 50px; 
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .main-title > p {
   font-size: 20px;
   position: absolute;
   left: 290px;
 }
+
 /* Form Styling */
 .login-form {
   max-width: 400px;
-  /* Adjust the maximum width to control the form's width */
   width: 100%;
   height: auto;
   margin: 50px auto;
-  /* Center the login form horizontally and provide top margin */
-  padding: 40px;
+  /* Center the form horizontally */
+  padding: 60px;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  /* Center align the content within the form */
 }
 
 .login-form h2 {
   margin-bottom: 20px;
   text-align: left;
-  /* Align the heading to the left */
 }
 
 .form-group {
   margin-bottom: 20px;
-  /* Increase margin for better spacing between form groups */
 }
 
 .form-group label {
   display: block;
   font-size: 15px;
-  /* Slightly increase font size for better readability */
   font-weight: bold;
   color: #2b3674;
   margin-bottom: 5px;
-  /* Add some space between label and input */
   text-align: left;
-  /* Align labels to the left */
 }
 
 .form-group input {
   width: 100%;
-  /* Make the input span the entire width of the form */
   padding: 12px;
   font-size: 15px;
   border: 1px solid #ccc;
@@ -260,28 +263,24 @@ body {
 
 .form-group input::placeholder {
   color: #aaa;
-  /* Adjust placeholder color for better contrast */
 }
 
 .btn-primary {
   background-color: #4318FF;
   color: #fff;
   font-size: 14px;
-  /* Slightly reduce font size for better fit */
   padding: 12px 20px;
-  /* Adjust padding for a more compact button */
   border-radius: 20px;
   cursor: pointer;
   width: 100%;
-  /* Make the button span the width of the form */
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: #9d4aff;
 }
-/* ---------- SCROLLBARS ---------- */
 
+/* SCROLLBARS */
 ::-webkit-scrollbar {
   width: 5px;
   height: 6px;
@@ -301,10 +300,7 @@ body {
   background-color: #a5aaad;
 }
 
-
-/* ---------- MEDIA QUERIES ---------- */
-
-
+/* MEDIA QUERIES */
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -326,17 +322,7 @@ body {
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
-  .login-form{
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 0;
-  }
-
-}
-
-/* Extra Small <= 576px */
-@media screen and (max-width: 576px) {
-  .header-left {
-    display: none;
+  .login-form {
+    max-width: 100%;
   }
 }
