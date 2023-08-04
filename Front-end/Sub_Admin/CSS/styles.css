@@ -59,7 +59,8 @@ body {
 /* Styling for the search input */
 #search-input {
   margin-left: -18px;
-  padding-left: 30px; /* Space for the search icon */
+  padding-left: 30px;
+  /* Space for the search icon */
   padding-right: 30px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -103,10 +104,12 @@ body {
   color: #040404;
   border-radius: 20px;
 }
+
 /* Add this CSS to your existing styles */
 .sidebar-list-item a {
   text-decoration: none;
 }
+
 /* .sidebar-list-item #profile {
   cursor: pointer;
   margin-top: 180px;
@@ -129,11 +132,13 @@ body {
   padding: 0;
   cursor: pointer;
 }
+
 .purple-logout-button {
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
+  margin-bottom: 20px;
+  /* Add margin at the bottom to create distance from other elements */
 }
 
 /* Styling for the Purple Login Button */
@@ -154,6 +159,7 @@ body {
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
+
 .purple-logout-button a {
   text-decoration: none;
 }
@@ -164,9 +170,11 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-.sidebar-brand >span {
+
+.sidebar-brand > span {
   margin-right: 10px;
 }
+
 .sidebar-responsive {
   display: inline !important;
   position: absolute;
@@ -179,6 +187,7 @@ body {
   grid-area: main;
   overflow-y: auto;
   padding: 0 20px;
+  margin: 0;
 }
 
 .main-title {
@@ -192,47 +201,50 @@ body {
 
 .main-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  /* Equal width columns */
   gap: 20px;
-  margin: 10px;
+  margin-right: 50px;
+  padding: 0;
 }
-.font-weight {
-  font-weight: bold;
-}
+
 .card {
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 0 10px 0;
-  padding: 10px;
+  align-items: center;
+  /* Align items vertically in the center */
   background-color: #ffffff;
-  box-sizing: border-box;
   border: 1px solid #d2d2d3;
   border-radius: 15px;
   box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-
-.card-inner img{
- height: 30px;
- background-color:#F4F7FE;
- border-radius: 50%;
+.card img {
+  max-height: 30px;
+  background-color: #f4f7fe;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* Added margin for spacing */
 }
 
 .card-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align items to the start of the container */
 }
 
 .card-inner > p {
   font-size: 18px;
+  margin: 0;
+  text-align: center;
 }
 
-.card-inner > span {
+/* .card-inner > span {
   font-size: 35px;
-}
+} */
 
 .charts {
   display: grid;

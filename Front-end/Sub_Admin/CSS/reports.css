@@ -290,7 +290,6 @@ th {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -308,19 +307,42 @@ th {
   .menu-icon {
     display: inline;
   }
+
+  /* Adjust the font size of material icons */
+  .material-icons-outlined {
+    font-size: 28px;
+  }
+
+  /* Adjust the font size of table headers */
+  th {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
-  .main-cards {
+  .grid-container {
     grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 0;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "header"
+      "main";
   }
 
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
+  .main-container {
+    padding: 20px;
+  }
+
+  /* Adjust the layout of the table */
+  table {
+    margin: 10px;
+  }
+
+  th,
+  td {
+    margin: 10px;
+    padding: 6px;
   }
 }
 
@@ -328,5 +350,23 @@ th {
 @media screen and (max-width: 576px) {
   .header-left {
     display: none;
+  }
+
+  /* Adjust the font size of material icons */
+  .material-icons-outlined {
+    font-size: 24px;
+  }
+
+  /* Adjust the font size of table headers */
+  th {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Adjust the size of the table cells */
+  th,
+  td {
+    margin: 6px;
+    padding: 4px;
   }
 }

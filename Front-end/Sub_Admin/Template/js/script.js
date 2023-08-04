@@ -16,6 +16,19 @@ function closeSidebar() {
   }
 }
 
+// Get the menu icon and close icon elements
+var menuIcon = document.getElementById("menu-icon");
+var closeIcon = document.getElementById("close-icon");
+
+// Attach click event listeners
+if (menuIcon) {
+  menuIcon.addEventListener("click", openSidebar);
+}
+
+if (closeIcon) {
+  closeIcon.addEventListener("click", closeSidebar);
+}
+
 function performSearch() {
   const searchInput = document.getElementById("search-input");
   const searchText = searchInput.value;
@@ -68,7 +81,6 @@ var barChartOptions = {
 
 var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
 barChart.render();
-
 
 // AREA CHART
 var areaChartOptions = {
@@ -127,40 +139,40 @@ areaChart.render();
 document.addEventListener("DOMContentLoaded", function () {
   var options = {
     chart: {
-      type: 'pie',
-      width: '600px', // Adjust the width to make the chart medium-sized (in pixels).
+      type: "pie",
+      width: "600px", // Adjust the width to make the chart medium-sized (in pixels).
     },
     series: [67, 33], // Unoccupied: 67%, Occupied: 33% (100 - 67 = 33)
-    labels: ['Unoccupied', 'Occupied'],
+    labels: ["Unoccupied", "Occupied"],
     dataLabels: {
       enabled: true,
       formatter: function (val, opts) {
-        return val.toFixed(0) + '%';
+        return val.toFixed(0) + "%";
       },
-      textAnchor: 'middle',
+      textAnchor: "middle",
       distributed: false,
       offsetX: 0,
       offsetY: 0,
       style: {
-        fontSize: '14px',
-        fontFamily: 'Helvetica, Arial, sans-serif',
-        fontWeight: 'bold',
-        colors: ['green', 'red'], // Set the colors for unoccupied and occupied.
+        fontSize: "14px",
+        fontFamily: "Helvetica, Arial, sans-serif",
+        fontWeight: "bold",
+        colors: ["green", "red"], // Set the colors for unoccupied and occupied.
       },
       background: {
         enabled: true,
-        foreColor: '#fff',
+        foreColor: "#fff",
         padding: 4,
         borderRadius: 2,
         borderWidth: 1,
-        borderColor: '#fff',
+        borderColor: "#fff",
         opacity: 0.9,
         dropShadow: {
           enabled: false,
           top: 1,
           left: 1,
           blur: 1,
-          color: '#000',
+          color: "#000",
           opacity: 0.45,
         },
       },
@@ -169,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
         top: 1,
         left: 1,
         blur: 1,
-        color: '#000',
+        color: "#000",
         opacity: 0.45,
       },
     },
