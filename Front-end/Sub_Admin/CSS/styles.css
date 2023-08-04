@@ -201,7 +201,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   border: 1px solid #d2d2d3;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -294,7 +294,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
