@@ -28,7 +28,7 @@ function performSearch() {
 var barChartOptions = {
   series: [
     {
-      data: [103, 104, 143, 140, 152],
+      data: [103, 114, 143, 140, 152],
     },
   ],
   chart: {
