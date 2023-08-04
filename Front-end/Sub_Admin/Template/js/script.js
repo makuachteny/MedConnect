@@ -28,7 +28,7 @@ function performSearch() {
 var barChartOptions = {
   series: [
     {
-      data: [10, 8, 6, 4, 2],
+      data: [103, 104, 143, 140, 152],
     },
   ],
   chart: {
@@ -54,10 +54,10 @@ var barChartOptions = {
     show: false,
   },
   xaxis: {
-    categories: ["Kacyiru Hospital", "Muhimu Hospital", "Rwinkwavu Hospital", "Shyira Hospital", "Ruhengeri Hospital"],
+    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
     title: {
-      text: "Hospital Names",
-    }
+      text: "Month of the Year",
+    },
   },
   yaxis: {
     title: {
