@@ -23,12 +23,12 @@ cursor.executemany(insert_doctor_query, doctors_data)
 
 # Insert data into the Patients table
 patients_data = [
-    ("John", "Doe", "1990-05-15", "Male", "123-456-7890", 1),
-    ("Jane", "Smith", "1985-08-20", "Female", "987-654-3210", 2),
-    ("Michael", "Johnson", "1978-03-10", "Male", "555-123-4567", 3)
+    ("1001", "John Doe", "1990-05-15", "Male", "123-456-7890", "1"),
+    ("1002", "Jane Smith", "1985-08-20", "Female", "987-654-3210", "2"),
+    ("1003", "Michael Johnson", "1978-03-10", "Male", "555-123-4567", "3"),
 ]
 
-insert_patient_query = "INSERT INTO Patients (FirstName, LastName, DateOfBirth, Gender, ContactNumber, DoctorID) VALUES (%s, %s, %s, %s, %s, %s)"
+insert_patient_query = "INSERT INTO Patients (ID, Patient_Name, DateOfBirth, Gender, Phone_Number, DoctorID) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
 cursor.executemany(insert_patient_query, patients_data)
 
 # Commit changes and close the cursor and connection
