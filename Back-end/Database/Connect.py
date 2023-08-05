@@ -13,12 +13,12 @@ cursor = db.cursor()
 
 # Insert data into the Doctors table
 doctors_data = [
-    ("Dr. Smith", "Cardiology", "General Hospital"),
-    ("Dr. Johnson", "Pediatrics", "Children's Clinic"),
-    ("Dr. Davis", "Dermatology", "Skin & Wellness Center")
+    ("1001", "Dr. Smith", "123 Main St City", "555-123-4567", "Cardiology", "General Hospital"),
+    ("1002", "Dr. Johnson", "456 Main St City", "555-987-6543", "Pediatrics", "Children's Clinic"),
+    ("1003", "Dr. Davis", "789 Main St City", "555-555-5555", "Dermatology", "Skin & Wellness Center"),
 ]
 
-insert_doctor_query = "INSERT INTO Doctors (DoctorName, Specialty, Hospital) VALUES (%s, %s, %s)"
+insert_doctor_query = "INSERT INTO Doctors (Id, DoctorName, Address, Phone_Number, Specialty, Hospital) VALUES (%s, %s, %s, %s, %s, %s)"
 cursor.executemany(insert_doctor_query, doctors_data)
 
 # Insert data into the Patients table
