@@ -33,9 +33,9 @@ cursor.executemany(insert_patient_query, patients_data)
 
 # Insert data into the Appointments table
 appointments_data = [
-    ("1001", "2021-05-15", "10:00:00", "1001", "1001"),
-    ("1002", "2021-05-15", "11:00:00", "1002", "1002"),
-    ("1003", "2021-05-15", "12:00:00", "1003", "1003"),
+    ("1001", "2021-05-15", "10:00:00", "23456778", "1001"),
+    ("1002", "2021-05-15", "11:00:00", "2334567778", "1002"),
+    ("1003", "2021-05-15", "12:00:00", "8996242526", "1003"),
 ]
 
 insert_appointment_query = "INSERT INTO Appointments (ID, Date, Time, PatientID, DoctorID) VALUES (%s, %s, %s, %s, %s)"
