@@ -169,7 +169,20 @@ body {
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
-
+#btn-primary-submit {
+  background-color: #7b32ff;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0 0 10px;
+    float: right;
+    margin-right: 160px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
 /* MAIN */
 /* Styling for the main content section */
 * ---------- MAIN ---------- */
@@ -313,7 +326,48 @@ body {
     display: none;
   }
 }
+/* ---------- MEDIA QUERIES ---------- */
 
+
+/* Medium <= 992px */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .header-left {
+    display: none;
+  }
+}
 
 
 

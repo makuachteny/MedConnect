@@ -283,7 +283,9 @@ body {
   background-color: #a5aaad;
 }
 
-/* MEDIA QUERIES */
+/* ---------- MEDIA QUERIES ---------- */
+
+
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -305,7 +307,21 @@ body {
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
-  .login-form {
-    max-width: 100%;
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .header-left {
+    display: none;
   }
 }
