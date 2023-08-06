@@ -78,43 +78,45 @@ body {
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  width: 270px;
   background-color: #ffffff;
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 /* Styling for the list items in the sidebar */
 .sidebar-list {
-  margin: 0 15px 0 50px;
+  margin: 0 50px 0 15px;
   font-size: 15px;
   padding: 0;
   list-style-type: none;
 }
 
 .sidebar-list-item {
-  padding: 10px;
+  padding: 10px 10px;
   color: #040404;
   border-radius: 20px;
-  cursor: pointer;
 }
 
-.sidebar-list-item #profile {
-  margin-top: 180px;
-}
-
-.sidebar-list-item:hover {
-  background-color: #bdc3dc;
-}
-
+/* Add this CSS to your existing styles */
 .sidebar-list-item a {
   text-decoration: none;
 }
 
+/* .sidebar-list-item #profile {
+cursor: pointer;
+margin-top: 180px;
+} */
+.sidebar-list-item:hover {
+  background-color: #bdc3dc;
+  cursor: pointer;
+}
+
 .sidebar-list-item img {
   height: 15px;
-  padding: 1px 10px 1px 0;
+  padding-top: 1px;
+  padding-right: 10px;
 }
 
 .sidebar-title {
@@ -123,22 +125,6 @@ body {
   align-items: center;
   padding: 0;
   cursor: pointer;
-}
-
-.sidebar-brand {
-  margin: 15px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.sidebar-brand > span {
-  margin-right: 10px;
-}
-
-.sidebar-responsive {
-  display: inline !important;
-  position: absolute;
-  z-index: 12 !important;
 }
 
 .purple-logout-button {
@@ -174,6 +160,22 @@ body {
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
+.sidebar-brand {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-brand > span {
+  margin-right: 10px;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
 
 /* ---------- MAIN ---------- */
 

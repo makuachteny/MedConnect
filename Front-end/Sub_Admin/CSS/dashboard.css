@@ -104,21 +104,28 @@ body {
 }
 
 .sidebar-list-item {
-    padding: 10px;
+    padding: 10px 10px;
     color: #040404;
     border-radius: 20px;
+}
+/* Add this CSS to your existing styles */
+.sidebar-list-item a {
+    text-decoration: none;
+}
+/* .sidebar-list-item #profile {
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    margin-top: 180px;
+} */
+
+.sidebar-list-item:hover {
+    background-color: #bdc3dc;
+    cursor: pointer;
 }
 
 .sidebar-list-item img {
     height: 15px;
+    padding-top: 1px;
     padding-right: 10px;
-}
-
-.sidebar-list-item:hover {
-    background-color: #bdc3dc;
 }
 
 .sidebar-title {
@@ -137,6 +144,12 @@ body {
 
 .sidebar-brand > span {
     margin-right: 10px;
+}
+
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
 }
 
 .purple-logout-button {

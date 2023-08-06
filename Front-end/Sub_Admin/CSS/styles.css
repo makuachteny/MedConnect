@@ -79,6 +79,7 @@ body {
 }
 
 /* SIDEBAR */
+/* Styling for the sidebar section */
 #sidebar {
   grid-area: sidebar;
   height: 100%;
@@ -89,6 +90,7 @@ body {
   -webkit-transition: all 0.5s;
 }
 
+/* Styling for the list items in the sidebar */
 .sidebar-list {
   margin: 0 50px 0 15px;
   font-size: 15px;
@@ -102,10 +104,15 @@ body {
   border-radius: 20px;
 }
 
+/* Add this CSS to your existing styles */
 .sidebar-list-item a {
   text-decoration: none;
 }
 
+/* .sidebar-list-item #profile {
+cursor: pointer;
+margin-top: 180px;
+} */
 .sidebar-list-item:hover {
   background-color: #bdc3dc;
   cursor: pointer;
@@ -129,9 +136,10 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
 }
 
+/* Styling for the Purple Login Button */
 .purple-logout-button .btn {
   background-color: #7b32ff;
   border-radius: 20px;
@@ -145,14 +153,18 @@ body {
   transition: background-color 0.1s ease;
 }
 
+/* Hover Effect for the Purple button */
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
-
 .purple-logout-button a {
   text-decoration: none;
 }
 
+/* Hover Effect for the Purple Login Button */
+.purple-logout-button .btn:hover {
+  background-color: #9d4aff;
+}
 .sidebar-brand {
   margin: 15px;
   font-size: 20px;

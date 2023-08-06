@@ -146,10 +146,10 @@ body {
     justify-content: center;
     margin-top: 90px;
     margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
-  }
+}
  
   /* Styling for the Purple Login Button */
-  .purple-logout-button .btn {
+.purple-logout-button .btn {
     background-color: #7b32ff;
     border-radius: 20px;
     font-family: "DM Sans", sans-serif;
@@ -160,20 +160,20 @@ body {
     height: 40px;
     cursor: pointer;
     transition: background-color 0.1s ease;
-  }
+}
  
   /* Hover Effect for the Purple button */
-  .purple-logout-button .btn:hover {
+.purple-logout-button .btn:hover {
     background-color: #9d4aff;
-  }
-  .purple-logout-button a {
+}
+.purple-logout-button a {
     text-decoration: none;
-  }
+}
   
-  /* Hover Effect for the Purple Login Button */
-  .purple-logout-button .btn:hover {
+/* Hover Effect for the Purple Login Button */
+.purple-logout-button .btn:hover {
     background-color: #9d4aff;
-  }
+}
 
 .sidebar-brand {
     margin: 15px;
