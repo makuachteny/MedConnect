@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* General Styles */
@@ -10,6 +10,7 @@ body {
   background-color: #aebccb;
   color: #2b3674;
   font-family: "DM Sans", sans-serif;
+  background: linear-gradient(to bottom, #dfe1ed, #717796); 
 }
 
 /* Styling for icons */
@@ -231,7 +232,6 @@ margin-top: 180px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .card-inner {
   display: flex;
   flex-direction: column;

@@ -146,12 +146,21 @@ body {
   position: absolute;
   z-index: 12 !important;
 }
-
+.btn-purple{
+  background-color: #7b32ff;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    text-decoration: none;
+}
 .purple-logout-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-  margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
+  /* Add margin at the bottom to create distance from other elements */
 }
 
 /* Styling for the Purple Login Button */

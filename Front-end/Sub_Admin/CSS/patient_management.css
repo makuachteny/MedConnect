@@ -127,7 +127,18 @@ margin-top: 180px;
   padding: 0;
   cursor: pointer;
 }
-
+#btn-primary-submit {
+    background-color: #7b32ff;
+      border-radius: 20px;
+      font-family: "DM Sans", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 10px 20px;
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      transition: background-color 0.1s ease;
+}
 .purple-logout-button {
   display: flex;
   justify-content: center;
@@ -196,15 +207,17 @@ margin-top: 180px;
 .main-title > p {
   font-size: 20px;
   position: absolute;
+  margin-left: 0 auto;
   left: 290px;
 }
 /* Form Styling */
 .login-form {
-  max-width: 1000px;
+  max-width: 700px;
   width: 100%;
   height: 480px;
   margin: 50px auto; /* Center the login form horizontally and provide top margin */
-  padding: 40px;
+  padding-left: 40px;
+  padding-bottom: 50px;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -230,8 +243,8 @@ margin-top: 180px;
 }
 
 .form-group input {
-  width: 80%;
-  padding: 15px;
+  width: 94%;
+  padding: 10px;
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;

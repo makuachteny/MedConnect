@@ -202,7 +202,7 @@ margin-top: 180px;
 
 /* Form Styling */
 .login-form {
-  max-width: 400px;
+  max-width: 700px;
   width: 100%;
   height: auto;
   margin: 50px auto;
@@ -234,7 +234,7 @@ margin-top: 180px;
 
 .form-group input {
   width: 100%;
-  padding: 12px;
+  padding: 5px;
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -309,12 +309,6 @@ margin-top: 180px;
     gap: 10px;
     margin-bottom: 0;
   }
-
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-}
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {
