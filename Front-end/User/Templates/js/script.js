@@ -38,6 +38,19 @@ function performSearch() {
 // ---------- CHARTS ----------
 
 // BAR CHART
+<script>
+  function updateOccupancy(roomId, occupancy) {
+      const occupancyElement = document.getElementById(`occupancy${roomId}`);
+      occupancyElement.textContent = `${occupancy}%`;
+  }
+
+  // Simulate changing occupancy rates (for demonstration purposes)
+  setInterval(() => {
+      const roomId = Math.floor(Math.random() * 3) + 1; // Random room ID between 1 and 3
+      const occupancy = Math.floor(Math.random() * 101); // Random occupancy between 0 and 100
+      updateOccupancy(roomId, occupancy);
+  }, 5000); // Update every 5 seconds
+</script>
 var barChartOptions = {
   series: [
     {
