@@ -3,8 +3,8 @@ import mysql.connector
 # Create a connection to the MySQL database
 db = mysql.connector.connect(
     host="localhost",
-    user="teny229",
-    password="password",
+    user="admin",
+    password="Medconnect!",
     database="hospital_records"
 )
 
