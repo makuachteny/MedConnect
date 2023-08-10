@@ -1,0 +1,131 @@
+/api/v1/patient:
+  post:
+    tags:
+      - Patient
+    summary: Add a patient
+    description: Add a patient
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              patientName:
+                type: string
+                example: "Alala"
+              patientPNumber:
+                type: string
+                example: 1234
+              dob:
+                type: date
+                example: 100
+              gender:
+                type: string
+                example: famale
+              patientLocation:
+                type: string
+                example: kigali
+              doctorId:
+                type: number
+                example: 11
+    responses:
+      "201":
+        description: Successfully added patient
+      "400":
+        description: Bad Request
+      "500":
+        description: Internal Server Error
+
+  get:
+    tags:
+      - Patient
+    summary: List all patients
+    description: List all patients
+    responses:
+      "200":
+        description: Successfully retrieved
+      "500":
+        description: Internal Server Error
+
+/api/v1/patient/{patientId}:
+  get:
+    tags:
+      - Patient
+    summary: Get one patient
+    description: Get one patient
+    parameters:
+      - name: patientId
+        in: path
+        required: true
+
+    responses:
+      "200":
+        description: Successfully retrieved
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
+
+  patch:
+    tags:
+      - Patient
+    summary: Update patient information
+    description: Update patient information
+    parameters:
+      - name: patientId
+        in: path
+        required: true
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              patientName:
+                type: string
+                example: "Alala"
+              patientPNumber:
+                type: string
+                example: 1234
+              dob:
+                type: date
+                example: 100
+              gender:
+                type: string
+                example: famale
+              patientLocation:
+                type: string
+                example: kigali
+              doctorId:
+                type: number
+                example: 11
+    
+    responses:
+      "200":
+        description: Successfully updated
+      "400":
+        description: Bad Request
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
+
+  delete:
+    tags:
+      - Patient
+    summary: Delete a patient
+    description: Delete a patient
+    parameters:
+      - name: patientId
+        in: path
+        required: true
+
+    responses:
+      "200":
+        description: Successfully deleted
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
