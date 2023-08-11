@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import router from "./routes/patientRoutes";
+import routerappointment from "./routes/appointmentRoutes";
 import swaggerUI from "swagger-ui-express";
 import swagger from "./docConfig/swagger";
 import morgan from "morgan";
@@ -20,5 +21,6 @@ app.get("/api/v1", (req, res) => {
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swagger));
 app.use("/api/v1/", router)
+app.use("/api/v1/", routerappointment)
 
 export default app;

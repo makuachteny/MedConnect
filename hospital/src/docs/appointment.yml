@@ -1,0 +1,126 @@
+/api/v1/Appointment:
+  post:
+    tags:
+      - Appointment
+    summary: Add a appointment
+    description: Add a appointment
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              Appointment_Date:
+                type: date
+                example: 12/01/2023
+              Appointment_Time:
+                type: string
+                example: 12:34
+              Patient_ID:
+                type: integer
+                example: 100
+              Doctor_ID:
+                type: integer
+                example: 12
+              Clinic_Number:
+                type: integer
+                example: 20
+              
+    responses:
+      "201":
+        description: Successfully added appointment
+      "400":
+        description: Bad Request
+      "500":
+        description: Internal Server Error
+
+  get:
+    tags:
+      - Appointment
+    summary: List all appointments
+    description: List all appointments
+    responses:
+      "200":
+        description: Successfully retrieved
+      "500":
+        description: Internal Server Error
+
+/api/v1/appointment/{appointmentId}:
+  get:
+    tags:
+      - Appointment
+    summary: Get one appointment
+    description: Get one appointment
+    parameters:
+      - name: appointmentId
+        in: path
+        required: true
+
+    responses:
+      "200":
+        description: Successfully retrieved
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
+
+  patch:
+    tags:
+      - Appointment
+    summary: Update appointment information
+    description: Update appointment information
+    parameters:
+      - name: appointmentId
+        in: path
+        required: true
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              Appointment_Date:
+                type: date
+                example: 12/01/2023
+              Appointment_Time:
+                type: string
+                example: 1234
+              Patient_ID:
+                type: integer
+                example: 100
+              Doctor_ID:
+                type: integer
+                example: 012
+              Clinic_Number:
+                type: integer
+                example: 11
+    
+    responses:
+      "200":
+        description: Successfully updated
+      "400":
+        description: Bad Request
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
+
+  delete:
+    tags:
+      - Appointment
+    summary: Delete a appointment
+    description: Delete a appointment
+    parameters:
+      - name: appointmentId
+        in: path
+        required: true
+
+    responses:
+      "200":
+        description: Successfully deleted
+      "404":
+        description: Not Found
+      "500":
+        description: Internal Server Error
