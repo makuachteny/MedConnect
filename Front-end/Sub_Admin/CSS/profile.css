@@ -183,59 +183,8 @@ margin-top: 180px;
 }
 
 
-/* Main section */
-.main-container {
-    grid-area: main;
-}
+/* MAIN */
 
-/* Profile section */
-.your-profile {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.your-profile h2 {
-    margin: 10px 10px 0 10px;
-    padding: 30px;
-    background-color: #868CFF;
-    border-radius: 10px;
-    color: #fff;
-}
-
-/* Profile image */
-.your-profile-img {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.your-profile-img img {
-    /* display: block; */
-    margin-top: -50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.profile-details {
-    margin: 0 0 10px 10px;
-    padding: 0;
-    display: block;
-}
-.edit-button {
-    padding: 8px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.edit-button:hover {
-    background-color: #0056b3;
-}
 /* ---------- MEDIA QUERIES ---------- */
 
 /* Medium <= 992px */
