@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin Dashboard</title>
+        <title>Make Payment</title>
         <!-- Custom Css -->
-        <link rel="stylesheet" href="../CSS/home.css" />
+        <link rel="stylesheet" href="../CSS/payment.css" />
         <!-- Poppins fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
                     <span class="material-icons-outlined">menu</span>
                 </div>
                 <div class="header-left">
-                    <h4>Home Page</h4>
+                    <h4>Make Payment</h4>
                 </div>
                 <div class="header-right">
                     <div class="search-container">
@@ -45,12 +45,9 @@
                 </div>
                 <ul class="sidebar-list">
 
-                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="" /><a href="main dashboard.html">Dashboard
-                            Bills</a></li>
-                    <li class="sidebar-list-item"><img src="../images/home page.png" alt="" /><a href="home_page.html">Home
-                            Bills</a></li>
-                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="view_bill.html">View bills
-                            Bills</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="" /><a href="main dashboard.html">Dashboard</a></li>
+                    <li class="sidebar-list-item"><img src="../images/home page.png" alt="" /><a href="home_page.html">Home</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="view_bill.html">View bills</a></li>
                     <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" /><a
                             href="profile.html">Profile</a></li>
                 </ul>
@@ -59,44 +56,37 @@
                 </div>
             </aside>
 
-            <!-- MAIN -->
-            <main class="main-container">
-                <div class="main-title">
-                    <p class="branch">Home </p>
-                </div>
-                <div class="main-content">
-                    <h1>MEDCONNECT Transforming Healthcare Delivery</h1>
-                    <p>
-                        Real-time collaboration for healthcare professionals. Seamless data integration. Enhanced
-                        patient engagement.MedConnect
-                        revolutionizes healthcare, empowering providers with instant access to critical patient data,
-                        streamlining operations,
-                        and fostering patient ownership of their health journey. Join us in building a healthier,
-                        connected future for all.
-                    </p>
-                    <button>
-                        LEARN MORE
-                    </button>
-                </div>
-                <div class="more">
-                    <h1>Powering your life with convenience and affordability</h1>
-                    <div class="offers">
+<!-- Main Content -->
+<main class="main-container">
+    <div class="make_payment">
+        <div class="payment-details">
+            <div class="details">
+            <h1>Credit Card Payment</h1>
+            <p>Make payment through your credit card below</p>
+            </div>
+        <div class="payment-form">
+            <form action="process_payment" method="post">
+                <label for="cardholderName">Cardholder's Name:</label>
+                <input type="text" id="cardholderName" name="cardholderName" required><br>
+                
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required><br>
+                
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required><br>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br>
+                
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" required><br>
+                
+              </form>
+        </div>
+        <button class="pay-button">Make Transactions</button>
+    </div>
+</main>
 
-                        <img src="../images/features-2 1.png" alt="">
-                        <div class="offers-list">
-                            <ul>
-                                <li>Online bill payment</li>
-                                <li>Detailed billing history</li>
-                                <li>Secure payment</li>
-                                <li>Improved Medication Management</li>
-                                <li>Customer support</li>
-                                <li>Secure login and password protection</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </main>
             <!-- END MAIN -->
 
             <!-- Scripts -->

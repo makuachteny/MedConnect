@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin Dashboard</title>
+        <title>View Bill</title>
         <!-- Custom Css -->
-        <link rel="stylesheet" href="../CSS/home.css" />
+        <link rel="stylesheet" href="../CSS/view_bill.css" />
         <!-- Poppins fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
                     <span class="material-icons-outlined">menu</span>
                 </div>
                 <div class="header-left">
-                    <h4>Home Page</h4>
+                    <h4>View Bill</h4>
                 </div>
                 <div class="header-right">
                     <div class="search-container">
@@ -45,12 +45,9 @@
                 </div>
                 <ul class="sidebar-list">
 
-                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="" /><a href="main dashboard.html">Dashboard
-                            Bills</a></li>
-                    <li class="sidebar-list-item"><img src="../images/home page.png" alt="" /><a href="home_page.html">Home
-                            Bills</a></li>
-                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="view_bill.html">View bills
-                            Bills</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="" /><a href="main dashboard.html">Dashboard</a></li>
+                    <li class="sidebar-list-item"><img src="../images/home page.png" alt="" /><a href="home_page.html">Home</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="view_bill.html">View bills</a></li>
                     <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" /><a
                             href="profile.html">Profile</a></li>
                 </ul>
@@ -59,44 +56,36 @@
                 </div>
             </aside>
 
-            <!-- MAIN -->
-            <main class="main-container">
-                <div class="main-title">
-                    <p class="branch">Home </p>
-                </div>
-                <div class="main-content">
-                    <h1>MEDCONNECT Transforming Healthcare Delivery</h1>
-                    <p>
-                        Real-time collaboration for healthcare professionals. Seamless data integration. Enhanced
-                        patient engagement.MedConnect
-                        revolutionizes healthcare, empowering providers with instant access to critical patient data,
-                        streamlining operations,
-                        and fostering patient ownership of their health journey. Join us in building a healthier,
-                        connected future for all.
-                    </p>
-                    <button>
-                        LEARN MORE
-                    </button>
-                </div>
-                <div class="more">
-                    <h1>Powering your life with convenience and affordability</h1>
-                    <div class="offers">
+<!-- Main Content -->
+<main class="main-container">
+    <div class="main-title">
+      <h4>Your bills</h4>
+    </div>
+    <div class="previous-bills">
+        <button class="previous-bills-button"><a href="previous_bills.html">Previous Transactions</a></button>
+      
+    </div>   
+    <div class="container">
+        <table>
+            <thead>
+              <tr>
+                <th>Invoice</th>
+                <th>Name</th>
+                <th>Due Date</th>
+                <th>Amount</th>
+                <th>Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C112356738</td>
+                    <td>Gisa Almand</td>
+                    <td>12/12/2021</td>
+                    <td>RWF 5,000</td>
+                    <td><button class="pay-button"><a href="payment.html">Make Payment</a></button></td>
+                </tr>
+</main>
 
-                        <img src="../images/features-2 1.png" alt="">
-                        <div class="offers-list">
-                            <ul>
-                                <li>Online bill payment</li>
-                                <li>Detailed billing history</li>
-                                <li>Secure payment</li>
-                                <li>Improved Medication Management</li>
-                                <li>Customer support</li>
-                                <li>Secure login and password protection</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </main>
             <!-- END MAIN -->
 
             <!-- Scripts -->
