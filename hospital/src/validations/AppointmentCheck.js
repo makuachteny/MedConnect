@@ -5,12 +5,12 @@ const Appointment = model.Appointment;
 export const checkAppointmentExist = async (req, res, next) => {
   try {
     const appointExist = await Appointment.findOne({
-      where: { AppointmentId: req.body.AppointmentId },
+      where: { AppointmentId: req.params.AppointmentId },
     });
-    if (appointExist)
+    if (!appointExist)
       return res.status(400).json({
         status: "fail",
-        message: "Appointment name already registered",
+        message: "Appointment ID does not exist",
       });
     next();
   } catch (error) {
@@ -39,7 +39,7 @@ export const checkIsEmpty = async (req, res, next) => {
   } catch (error) {
     return res.status(500).json({
       status: "error",
-      error: error.message,
+      error: error,
     });
   }
 };

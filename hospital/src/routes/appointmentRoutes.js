@@ -10,10 +10,10 @@ import { checkIsEmpty, checkAppointmentExist } from "../validations/AppointmentC
 
 const router = express.Router();
 
-router.post("/Appointment", checkIsEmpty, checkAppointmentExist, addAppointment);
+router.post("/Appointment", checkIsEmpty, addAppointment);
 router.get("/appointment", findAllAppointments);
-router.get("/appointment/:appointmentId", findOneAppointment);
-router.patch("/appointment/:appointmentId", checkIsEmpty, updateAppointment);
-router.delete("/appointment/:appointmentId", deleteAppointment);
+router.get("/appointment/:AppointmentId", findOneAppointment);
+router.patch("/appointment/:AppointmentId", checkAppointmentExist, updateAppointment);
+router.delete("/appointment/:AppointmentId", deleteAppointment);
 
 export default router;

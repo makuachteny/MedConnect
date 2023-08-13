@@ -48,7 +48,7 @@ import {
   
   const findOneAppointment = async (req, res) => {
     try {
-      const id = req.params.Id;
+      const id = req.params.AppointmentId;
       const { data } = await getAppointmentById(id);
       if (data) {
         return res.status(200).json({
@@ -71,7 +71,7 @@ import {
   
   const updateAppointment = async (req, res) => {
     try {
-      const id = req.params.allAppointmentId;
+      const id = req.params.AppointmentId;
       const { data, message404 } = await updateAppointmentById(req.body, id);
       if (data) {
         return res.status(200).json({
