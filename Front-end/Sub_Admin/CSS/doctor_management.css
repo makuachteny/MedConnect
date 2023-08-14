@@ -140,7 +140,7 @@ body {
     margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
   }
  
-  /* Styling for the Purple Login Button */
+  /* Styling for the Purple Logout Button */
   .purple-logout-button .btn {
     background-color: #7b32ff;
     border-radius: 20px;
@@ -162,10 +162,37 @@ body {
     text-decoration: none;
   }
   
-  /* Hover Effect for the Purple Login Button */
-  .purple-logout-button .btn:hover {
+
+  .purple-adddoctor-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 20px; /* Add margin at the bottom to create distance from other elements */
+  }
+ 
+  /* Styling for the Purple Add doctor Button */
+  .purple-adddoctor-button .btn {
+    background-color: #7b32ff;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+  }
+ 
+  /* Hover Effect for the Purple button */
+  .purple-adddoctor-button .btn:hover {
     background-color: #9d4aff;
   }
+  .purple-adddoctor-button a {
+    text-decoration: none;
+  }
+  
+
 .sidebar-brand {
     margin: 15px;
     font-size: 20px;
