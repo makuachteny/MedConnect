@@ -78,38 +78,32 @@
         </div>
         <div class="login-form">
           <h2>Add User</h2>
-          <form>
-            <div class="form-group">
+          <form id="patient-form">
+            <!-- <div class="form-group">
               <label for="scno">SCNO.</label>
               <input type="text" id="scno" name="scno" required>
-            </div>
+            </div> -->
             <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" id="fullname" name="fullname" required>
+              <label for="Patient_Name">Full Name</label>
+              <input type="text" id="Patient_Name" name="Patient_Name" required>
             </div>
             <div class="form-group">
               <label for="address">Address</label>
-              <input type="text" id="address" name="address" required>
+              <input type="text" id="Patient_Location" name="Patient_Location" required>
             </div>
             <div class="form-group">
               <label for="number">Number</label>
-              <input type="text" id="number" name="number" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required>
+              <input type="text" id="Patient_Phone_Number" name="Patient_Phone_Number" required>
             </div>
             <button type="submit" id="btn-primary-submit">Submit</button>
+            
           </form>
         </div>
       </main>
     </div>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <script src="js/fetch.js"></script>
   </body>
 
 </html>

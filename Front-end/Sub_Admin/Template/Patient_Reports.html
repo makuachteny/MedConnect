@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Reports</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Add Patient</title>
     <!-- Custom Css -->
-    <link rel="stylesheet" href="../css/reports.css">
+    <link rel="stylesheet" href="../CSS/add_patient.css" />
     <!-- Poppins fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet" />
     <!-- Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body  onload=" retrieveAppointments()">
     <div class="grid-container">
-        <!-- Header -->
-        <header class="header">
-          <div class="menu-icon" onclick="openSidebar()">
-            <span class="material-icons-outlined">menu</span>
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <h4>Patient Records</h4>
+        </div>
+        <div class="header-right">
+          <div class="search-container">
+            <input type="search" name="search" id="search-input" placeholder="Search" />
+            <span class="material-icons-outlined search-icon">search</span>
           </div>
-          <div class="header-left">
-            <h4>Patient Reports</h4>
-          </div>
-          <div class="header-right">
-            <div class="search-container">
-              <input type="search" name="search" id="search-input" placeholder="Search" />
-              <span class="material-icons-outlined search-icon">search</span>
-            </div>
-            <span class="material-icons-outlined">nightlight_round</span>
-            <span class="material-icons-outlined">account_circle</span>
-          </div>
-        </header>
+          <span class="material-icons-outlined">nightlight_round</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+
             <!-- Sidebar -->
             <aside id="sidebar">
               <div class="sidebar-title">
@@ -40,89 +42,67 @@
                 <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
               </div>
               <ul class="sidebar-list">
-                <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /><a
-                    href="index.html">Dashboard</a></li>
-                <li class="sidebar-list-item"><img src="../images/patient_management.png"
-                    alt="Patient Administration image" /><a href="add_patient.html">Patient Records</a></li>
-                <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" /><a
-                    href="hospital_management.html">Hospital Management</a></li>
-                <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" /><a
-                    href="patient_testing_log.html">Patient Testing</a></li>
-                <!--<li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" /><a
-                    href="operation_theater_booking.html" class="href">Operation Theater</a></li>-->
-                <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" /><a href="staff_management">Staff
-                    Management</a></li>
-                <li class="sidebar-list-item"><img src="../images/user.png" alt="" /><a href="patient_management.html">User Management</a></li>
-                <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" /><a href="doctor_management.html">Doctor
-                    Management</a></li>
-                <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt=""> <a
-                      href="Scheduling.html">Scheduling</a></li>
-                <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" /><a href="Patient_Reports.html">Patient Reports</a></li>
-                <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="generate_bill.html">General Bills</a></li>
-                <!--<li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff Attendance</li>-->
-                <!-- <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" /><a href="patient_data.html">Patient Reports</a></li> -->
-                <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" /><a
-                    href="profile.html">Profile</a></li>
-              </ul>
+                <ul class="sidebar-list">
+                  <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="Dashboard icon" /><a
+                      href="index.html">Dashboard</a></li>
+                  <li class="sidebar-list-item"><img src="../images/patient_management.png"
+                      alt="Patient Administration image" /><a href="add_patient.html">Patient Records</a></li>
+                  <li class="sidebar-list-item"><img src="../images/hospital_management.png" alt="" /><a
+                      href="hospital_management.html">Hospital Management</a></li>
+                  <li class="sidebar-list-item"><img src="../images/patient_testing.png" alt="" /><a
+                      href="patient_testing_log.html">Patient Testing</a></li>
+                  <!--<li class="sidebar-list-item"><img src="../images/operation_theater.png" alt="" /><a
+                      href="operation_theater_booking.html" class="href">Operation Theater</a></li>-->
+                  <li class="sidebar-list-item"><img src="../images/staffs.png" alt="" /><a href="staff_management">Staff
+                      Management</a></li>
+                  <li class="sidebar-list-item"><img src="../images/user.png" alt="" /><a href="patient_management.html">User Management</a></li>
+                  <li class="sidebar-list-item"><img src="../images/doctor.png" alt="" /><a href="doctor_management.html">Doctor
+                      Management</a></li>
+                  <li class="sidebar-list-item"><img src="../images/operation_theater.png" alt=""> <a
+                        href="Scheduling.html">Scheduling</a></li>
+                  <li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" /><a href="Patient_Reports.html">Appointments</a></li>
+                  <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="generate_bill.html">General Bills</a></li>
+                  <!--<li class="sidebar-list-item"><img src="../images/staff_attendance_report.png" alt="" />Staff Attendance</li>-->
+                  <!-- <li class="sidebar-list-item"><img src="../images/patient_data.png" alt="" /><a href="patient_data.html">Patient Reports</a></li> -->
+                  <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" /><a
+                      href="profile.html">Profile</a></li>
+                </ul>
               <div class="purple-logout-button">
                 <button type="button" class="btn btn-purple"><a href="login.html">Logout</a></a></button>
             </div>
             </aside>
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <h4>Kigali branch</h4>
-        </div>
-        <div class="container">
-            <h4>Payment details</h4>
-            <table>
-                <thead>
-                  <tr>
-                    <th>Users</th>
-                    <th>Address</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>Kigali</td>
-                        <td>12/12/2021</td>
-                        <td>1000</td>
-                    </tr>
-        </div>
-      </main>
-      <script src="js/script.js"></script>
+
+<!-- MAIN -->
+   <main class="main-container">
+    <div class="main-title">
+      <h4>Kigali branch</h4>
+    </div>
+    <div class="purple-adduser-button">
+      <button type="button" class="btn btn-purple"> <a href="Scheduling.html">New Appointment</a></button> 
+    </div>
+    <div class="container">
+      <h2>User details</h2>
+      <table class="tableEl">
+        <thead>
+          <tr>
+            <th>Appointment Id</th>
+            <th>Patient ID</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="appointmentRecords" class="appointment-records">
+          
+         
+        </tbody>
+      </table>
+    </div>
+
+   </main>
+      <!-- End MAIN -->
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <script src="js/appointment.js"></script>
   </body>
 </html>

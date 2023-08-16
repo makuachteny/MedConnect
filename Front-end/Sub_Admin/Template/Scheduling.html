@@ -73,11 +73,11 @@
                 <div class="main-title">
                     <p class="branch">Kigali branch</p>
                 </div>
-                <form class="login-form">
+                <form class="login-form" id="Appointment-form"
                     <h2>Book an Appointment</h2>
                     <div class="form-group">
-                        <label for="patient-name">Patient Name</label>
-                        <input type="text" id="patient-name" placeholder="Enter patient's full name">
+                        <label for="Patient_ID">Patient ID</label>
+                        <input type="text" id="Patient_ID" placeholder="Enter patient's ID">
                     </div>
                     <div class="form-group">
                         <label for="">Procedure Type</label>
@@ -85,19 +85,21 @@
                     </div>
                     <div class="form-group">
                         <label for="date">Date</label>
-                        <input type="date" id="date">
+                        <input type="date" id="Appointment_Date">
                     </div>
                     <div class="form-group">
                         <label for="time">Time</label>
-                        <input type="time" id="time">
+                        <input type="time" id="Appointment_Time">
                     </div>
-                    <button class="btn-primary" type="submit">Book Now</button>
+                    <button class="btn-primary " type="submit" id="submit-appointment">Book Now</button>
                 </form>
             </main>
         </div>
         <!-- Scripts -->
         <!-- Custom JS -->
         <script src="../Template/js/script.js"></script>
+        <script src="js/appointment.js"></script>
+
     </body>
 
 </html>
