@@ -44,7 +44,7 @@ MedConnect is a Python-based medical record system designed to streamline and ma
 
 - Integrate the frontend and backend components to create a fully functional web application.
 - Perform unit testing on the front and back end to identify and fix any issues or bugs.
-- Conduct integration testing to ensure seamless communication between the front end and back end.
+- Conduct integration testing to ensure seamless communication between the front and back end.
 
 ## 5. Deployment Preparation
 
