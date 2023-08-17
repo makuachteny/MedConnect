@@ -1,10 +1,10 @@
 ---
 title: "MedConnect Medical Record System"
----
+--
 
 # MedConnect Medical Record System
 
-MedConnect is a Python-based medical record system designed to streamline and manage various aspects of medical facilities, including patient management, hospital administration, staff management, and more. This system provides an intuitive and user-friendly interface for healthcare professionals to efficiently access and organize crucial medical information.
+MedConnect is a Python-based medical record system designed to streamline and manage various aspects of medical facilities, including patient management, hospital administration, staff management, and more. This system provides an intuitive and user-friendly interface for healthcare professionals to access and organize crucial medical information efficiently.
 
 ## Features
 
@@ -18,7 +18,7 @@ MedConnect is a Python-based medical record system designed to streamline and ma
 - **Doctor Management**: Manage doctor profiles, specialties, and assignments.
 - **Staff Attendance**: Track staff attendance and generate attendance reports.
 - **Patient Reports**: Generate and access patient medical reports securely.
-- **Profile**: Users can view and update their personal profiles.
+- **Profile**: Users can view and update their profiles.
 
 # Development Process
 
@@ -43,8 +43,8 @@ MedConnect is a Python-based medical record system designed to streamline and ma
 ## 4. Integration and Testing
 
 - Integrate the frontend and backend components to create a fully functional web application.
-- Perform unit testing on both the frontend and backend to identify and fix any issues or bugs.
-- Conduct integration testing to ensure seamless communication between frontend and backend.
+- Perform unit testing on the front and back end to identify and fix any issues or bugs.
+- Conduct integration testing to ensure seamless communication between the front end and back end.
 
 ## 5. Deployment Preparation
 
