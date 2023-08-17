@@ -80,6 +80,7 @@ body {
 }
 
 /* SIDEBAR */
+/* Styling for the sidebar section */
 #sidebar {
   grid-area: sidebar;
   height: 100%;
@@ -90,6 +91,7 @@ body {
   -webkit-transition: all 0.5s;
 }
 
+/* Styling for the list items in the sidebar */
 .sidebar-list {
   margin: 0 50px 0 15px;
   font-size: 15px;
@@ -103,10 +105,15 @@ body {
   border-radius: 20px;
 }
 
+/* Add this CSS to your existing styles */
 .sidebar-list-item a {
   text-decoration: none;
 }
 
+/* .sidebar-list-item #profile {
+cursor: pointer;
+margin-top: 180px;
+} */
 .sidebar-list-item:hover {
   background-color: #bdc3dc;
   cursor: pointer;
@@ -131,6 +138,7 @@ body {
   justify-content: center;
   margin-top: 90px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .purple-logout-button .btn {
@@ -144,13 +152,30 @@ body {
   height: 40px;
   cursor: pointer;
   transition: background-color 0.1s ease;
+  text-decoration: none;
 }
+
+
 
 .purple-logout-button .btn:hover {
   background-color: #9d4aff;
 }
 
 .purple-logout-button a {
+  text-decoration: none;
+}
+
+.main-container button {
+  background-color: #7b32ff;
+  border-radius: 20px;
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
   text-decoration: none;
 }
 
@@ -169,6 +194,7 @@ body {
   position: absolute;
   z-index: 12 !important;
 }
+
 /* ---------- MAIN ---------- */
 
 .main-container {

@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "alpha-value-notation": "number",
+    "color-no-hex": true
+  }
+}
