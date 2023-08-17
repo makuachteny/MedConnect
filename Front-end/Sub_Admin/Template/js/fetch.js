@@ -1,6 +1,6 @@
 const PatientId = localStorage.getItem('PatientId')
 
-const baseUrl = "http://localhost:7001/"
+const baseUrl = "http://192.168.1.66:7001/"
 async function fetchHealthRecords(e) {
   if(e){
     e.preventDefault();
