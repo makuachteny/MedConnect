@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>View Bill</title>
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="../CSS/view_bill.css" />
+        <!-- Poppins fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap"
+            rel="stylesheet" />
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <h4>View Bill</h4>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="search" name="search" id="search-input" placeholder="Search" />
+                        <span class="material-icons-outlined search-icon">search</span>
+                    </div>
+                    <span class="material-icons-outlined">nightlight_round</span>
+                    <span class="material-icons-outlined">account_circle</span>
+                </div>
+            </header>
+
+            <!-- sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand"><strong><a href="index.html">MEDCONNECT</a></strong></div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close_fullscreen</span>
+                </div>
+                <ul class="sidebar-list">
+
+                    <li class="sidebar-list-item"><img src="../images/Dashboard.png" alt="" /><a href="main dashboard.html">Dashboard</a></li>
+                    <li class="sidebar-list-item"><img src="../images/home page.png" alt="" /><a href="home_page.html">Home</a></li>
+                    <li class="sidebar-list-item"><img src="../images/Reports.png" alt="" /><a href="view_bill.html">View bills</a></li>
+                    <li class="sidebar-list-item"><img src="../images/profile.png" id="profile" /><a
+                            href="profile.html">Profile</a></li>
+                </ul>
+                <div class="purple-logout-button">
+                    <button type="button" class="btn btn-purple"><a href="login.html">Logout</a></a></button>
+                </div>
+            </aside>
+
+<!-- Main Content -->
+<main class="main-container">
+    <div class="main-title">
+      <h4>Your bills</h4>
+    </div>
+    <div class="previous-bills">
+        <button class="previous-bills-button"><a href="previous_bills.html">Previous Transactions</a></button>
+      
+    </div>   
+    <div class="container">
+        <table>
+            <thead>
+              <tr>
+                <th>Invoice</th>
+                <th>Name</th>
+                <th>Due Date</th>
+                <th>Amount</th>
+                <th>Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C112356738</td>
+                    <td>Gisa Almand</td>
+                    <td>12/12/2021</td>
+                    <td>RWF 5,000</td>
+                    <td><button class="pay-button"><a href="payment.html">Make Payment</a></button></td>
+                </tr>
+</main>
+
+            <!-- END MAIN -->
+
+            <!-- Scripts -->
+            <!-- ApexCharts -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+            <!-- Custom JS -->
+            <script src="../Template/js/script.js"></script>
+    </body>
+
+</html>
