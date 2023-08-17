@@ -7,7 +7,7 @@ body {
   margin: 0;
   background-color: #aebccb;
   color: #2b3674;
-  /* font-family: "DM Sans", sans-serif; */
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Styling for icons */
@@ -142,7 +142,7 @@ body {
 .purple-logout-button .btn {
   background-color: #7b32ff;
   border-radius: 20px;
-  /* font-family: "DM Sans", sans-serif; */
+  font-family: "DM Sans", sans-serif;
   color: #ffffff;
   font-size: 16px;
   padding: 10px 20px;
