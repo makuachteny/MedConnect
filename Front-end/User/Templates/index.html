@@ -15,29 +15,43 @@
     <div class="main-container">
       <div class="container">
         <div class="login-form">
-          <div class="branch">
-            <h1>User branch</h1>
-            <p>Enter your email and password to login!</p>
-            <input type="text" placeholder="Select your branch..." /> 
-          </div>
-          <div class="email">
-            <h4>Email*</h4>
-            <input type="email" name="mail@simple.com" placeholder="mail@simmmple.com" id="email" />
-          </div>
-          <div class="password">
-            <h4>Password*</h4>
-            <input type="password" placeholder="Min. 8 characters" name="Min" id="pwd" />
-            <p>Forget password?</p>
-            <div>
-              <label for="Keep-log-in" id="checkbox"> <input type="checkbox" /> Keep me logged in </label>
+          <form action="../Template/dashboard.html" method="post">
+  <div class="branch">
+    <h1>Hospital branch</h1>
+    <p>Enter your email and password to login!</p>
+    <select name="hospital_branch" id="hospital_branch">
+      <option value="" selected disabled>Select your branch...</option>
+      <option value="Kanombe Hospital">Kanombe Hospital</option>
+      <option value="Plateau Poly-Clinic">Plateau Poly-Clinic</option>
+      <option value="King Faisal Hospital">King Faisal Hospital</option>
+      <option value="CHUK">CHUK</option>
+      <option value="CHUB">CHUB</option>
+      <option value="PolyFam Poly-Clinic">PolyFam Poly-Clinic</option>
+    </select>
+  </div>
+
+            <div class="email">
+              <h4>Email*</h4>
+              <input type="email" name="email" placeholder="mail@simple.com" id="email" required />
             </div>
-          </div>
-          <button><a href="index.html">Login</a></button>
+            <div class="password">
+              <h4>Password*</h4>
+              <input type="password" placeholder="Min. 8 characters" name="password" id="pwd" required />
+              <p>Forget password?</p>
+              <div>
+                <label for="Keep-log-in" id="checkbox">
+                  <input type="checkbox" name="keep_logged_in" /> Keep me logged in
+                </label>
+              </div>
+            </div>
+            <button  type="submit">Login</button>
+          </form>
         </div>
         <div id="login-image">
-          <img src="../Sub_Admin/images/login.png" alt="" />
+          <img src="../images/login.png" alt="" />
         </div>
       </div>
     </div>
   </body>
+
 </html>
